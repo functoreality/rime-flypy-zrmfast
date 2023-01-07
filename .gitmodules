@@ -1,0 +1,3 @@
+[submodule "chaizi/chaizi"]
+	path = chaizi/chaizi
+	url = git@github.com:kfcd/chaizi.git
