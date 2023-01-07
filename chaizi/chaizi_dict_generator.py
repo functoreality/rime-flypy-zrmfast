@@ -60,17 +60,16 @@ def pinyin_to_zrm(pinyin: list[str]):
     return [to_zrm(x) for x in pinyin]
 
 
-is_simplified = False
+simplified_set = set()
 
-
-def chai():
+def chai(is_simplified: bool):
     from pypinyin import lazy_pinyin
     if is_simplified:
         lines = open("chaizi/chaizi-jt.txt").readlines()  # 载入简体拆字字典
-        dfile = open("chaizi_zrm.yaml", "w")  # 打开待写入字库文件
+        dfile = open("../chaizi_zrm.dict.yaml", "w")  # 打开待写入字库文件
     else:
-        lines = open("chaizi/chaizi-ft.txt").readlines()  # 载入简体拆字字典
-        dfile = open("chaizi_zrm.tr.yaml", "w")  # 打开待写入字库文件
+        lines = open("chaizi/chaizi-ft.txt").readlines()  # 载入繁体拆字字典
+        dfile = open("../chaizi_zrm.tr.dict.yaml", "w")  # 打开待写入字库文件
 
     dfile.write(
         """
@@ -79,33 +78,40 @@ def chai():
 ## Based on http://gerry.lamost.org/blog/?p=296003
 ## 拆字模式字典，拆分组件使用自然码双拼输入
 ---
-name: zrm_chaizi
+name: chaizi_zrm
 version: "2023.1.7"
 sort: by_weight
 use_preset_vocabulary: true  # 導入八股文字頻
 max_phrase_length: 1         # 不生成詞彙
 import_tables:
   - chaizi_zrm.tr ## 注释掉后：停用繁体部分词典
-...
-        """ if is_simplified else (
+...""" if is_simplified else (
             """
 # Rime dictionary
 # encoding: utf-8
 ## Based on http://gerry.lamost.org/blog/?p=296003
 ## 拆字繁体模式字典，拆分组件使用自然码双拼输入
 ---
-name: zrm_chaizi
+name: chaizi_zrm.tr
 version: "2023.1.7"
 sort: by_weight
 use_preset_vocabulary: true  # 導入八股文字頻
 max_phrase_length: 1         # 不生成詞彙
-...
-            """
+..."""
         )
     )
     dfile.write("\n")
     for line in lines:
         data = line.strip().split("\t")
+        if is_simplified:
+            simplified_set.add(data[0])
+            print(f"简体库中加入 {data[0]}")
+        else:
+            # 去掉繁简重复项
+            if data[0] in simplified_set:
+                print(f"{data[0]} 已经在简体库中")
+                continue
+
         for i in range(1, len(data)):
             # 笔画转拼音，以字母u开头
             pinyin = lazy_pinyin(data[i].replace(" ", ""))
@@ -124,7 +130,7 @@ max_phrase_length: 1         # 不生成詞彙
 
 
 if __name__ == '__main__':
-    is_simplified = False
-    chai()
     is_simplified = True
-    chai()
+    chai(is_simplified)
+    is_simplified = False
+    chai(is_simplified)

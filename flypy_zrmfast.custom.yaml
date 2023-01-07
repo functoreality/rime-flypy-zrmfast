@@ -24,6 +24,8 @@ patch:
 
   ##  ab前缀改用五笔画输入；默认为部件组字
   #reverse_lookup/dictionary: stroke
+  ## ab前缀改为自然码部件组字,默认小鹤部件组字
+  #  reverse_lookup/dictionary: chaizi_zrm
   #reverse_lookup/tips: 〔筆畫〕
   ##  此外可能需要删除 stroke.custom.yaml 文件。
 
