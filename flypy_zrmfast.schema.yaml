@@ -10,7 +10,8 @@ schema:
   description: |
     小鹤双拼，自然快手辅助码
   dependencies:
-    - stroke
+    - luna_pinyin
+    - chaizi
     - emoji
     - easy_en
 
