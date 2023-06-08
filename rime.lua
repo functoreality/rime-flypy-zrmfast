@@ -103,6 +103,11 @@ snip_map2 = {['jjj']='\\downarrow ',
    ['vvr']='\\varrho ',
    ['vvp']='\\varpi ',
    ['vvl']='\\ell ',
+   ['ool']='\\le ',
+   ['oog']='\\ge ',
+   ['ooL']='\\ll ',
+   ['ooG']='\\gg ',
+   ['ooh']='\\hat ',
    ['vv=']='\\approx ',
    ['vv:']='\\coloneqq ',
    ['vv,']=',\\dots,',
@@ -151,20 +156,14 @@ function func_translator(input, seg, env)
       return
    end
    -- 如果输入串为 `afd` 则翻译
-   if (expr == "d") then
-      --[[ 用 `yield` 产生一个候选项
-           候选项的构造函数是 `Candidate`，它有五个参数：
-            - type: 字符串，表示候选项的类型
-            - start: 候选项对应的输入串的起始位置
-            - _end:  候选项对应的输入串的结束位置
-            - text:  候选项的文本
-            - comment: 候选项的注释
-       --]]
+   if (expr:sub(1,1) == "d") then
+      if (expr:sub(2,2) == '2' or expr:sub(2,2) == ';') then ---- 若选择次选，直接上屏
+         env.engine:commit_text(os.date("%Y年%m月%d日"))
+         env.engine.context:clear()
+         return
+      end
       yield(Candidate("date", seg.start, seg._end, os.date("%Y-%m-%d"), "日期"))
       yield(Candidate("date", seg.start, seg._end, os.date("%Y年%m月%d日"), "日期"))
-      --[[ 用 `yield` 再产生一个候选项
-           最终的效果是输入法候选框中出现两个格式不同的当前日期的候选项。
-      --]]
    end
 end
 
