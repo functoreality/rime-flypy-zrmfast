@@ -56,3 +56,23 @@ patch_zrm:
     # - derive/([jqxy])u[!@]/$1v!/
     - xform/[!@]//
 
+patch_mspy:
+#patch: ## 部件组字使用微软双拼
+  translator/prism: chaizi_fp2mspy
+  speller/algebra:
+    - xform/x!/w@/
+    - xform/([gkhvuirzcs])k!/$1y@/
+    - xform/k!/;@/
+    - xform/y!/p@/
+    - xform/l!/d@/
+    - xform/c!/k@/
+    - xform/d!/l@/
+    - xform/w!/z@/
+    - xform/p!/x@/
+    - xform/([^aeiou])n!/$1c@/
+    - xform/z!/b@/
+    - xform/b!/n@/
+    - xform/([nl])v!/$1y@/
+    # - derive/([jqxy])u[!@]/$1v!/
+    - xform/[!@]//
+

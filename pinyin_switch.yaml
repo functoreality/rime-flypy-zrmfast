@@ -146,3 +146,76 @@ flypy2zrm:
     # - derive/^([^gkhvuirzcs])y/$1n/
     # - derive/^(.)n/$1y/
 
+##  微软双拼方案
+flypy2mspy:
+  key_binder/bindings:
+    - { when: composing, accept: Control+m, send: Return }
+    - { when: composing, accept: Control+w, send: Control+BackSpace }
+    - { when: has_menu, accept: slash, send: 2 }
+    - { when: composing, accept: Control+i, send: Shift+Right }
+    - { when: composing, accept: Control+o, send: Shift+Left }
+  reverse_lookup/comment_format:
+    - xform/^/ /
+    - xform/( \w)w/$1Z/ # 小鹤双拼的W键的ei匹配到微软双拼的Z键
+    - xform/( \w)y/$1P/ # 小鹤双拼的Y键的un匹配到微软双拼的P键
+    - xform/( \w)p/$1X/ # 小鹤双拼的P键的ie匹配到微软双拼的X键
+    - xform/( \w)d/$1L/ # 小鹤双拼的D键的ai匹配到微软双拼的L键
+    - xform/( [gkhvuirzcs])k/$1Y/ # 小鹤双拼的K键的uai匹配到微软双拼的Y键
+    - xform/( \w)k/$1;/ # 小鹤双拼的K键的ing匹配到微软双拼的;键
+    - xform/( \w)l/$1D/ # 小鹤双拼的L键的iang和uang匹配到微软双拼的D键
+    - xform/( \w)z/$1B/ # 小鹤双拼的Z键的ou匹配到微软双拼的B键
+    - xform/( \w)x/$1W/ # 小鹤双拼的X键的ia和ua匹配到微软双拼的W键
+    - xform/( \w)c/$1K/ # 小鹤双拼的C键的ao匹配到微软双拼的K键
+    # - xform/( \w)u/$1O/ # 小鹤双拼的U键的o匹配到微软双拼的O键
+    - xform/( [^aeiou])n/$1C/ # 小鹤双拼的N键的iao匹配到微软双拼的C键
+    - xform/( \w)b/$1N/ # 小鹤双拼的B键的in匹配到微软双拼的N键
+    - xform/( [nl])v/$1Y/ # 小鹤双拼的V键的v匹配到微软双拼的Y键
+    - xlit/ZPXLYDLBWKOCNY/zpxlydlbwkocny/
+
+    - xform/^ai/ol/
+    - xform/^an/oj/
+    - xform/^ah/oh/
+    - xform/^ao/ok/
+    - xform/^ei/oz/
+    - xform/^en/of/
+    - xform/^er/or/
+    - xform/^ou/ob/
+    - xform/^ //
+  reverse_lookup/prism: chaizi_fp2mspy
+  translator/prism: mspy_zrmfast
+  speller/alphabet: zyxwvutsrqponmlkjihgfedcba;[
+  speller/algebra:
+    - xform/^(\w)w/$1Z/
+    - xform/^(\w)y/$1P/
+    - xform/^(\w)p/$1X/
+    - xform/^(\w)d/$1L/
+    - xform/^([gkhvuirzcs])k/$1Y/
+    - xform/^(\w)k/$1;/
+    - xform/^(\w)l/$1D/
+    - xform/^(\w)z/$1B/
+    - xform/^(\w)x/$1W/
+    - xform/^(\w)c/$1K/
+    # - xform/^(\w)u/$1O/
+    - xform/^([^aeiou])n/$1C/
+    - xform/^(\w)b/$1N/
+    - derive/^([nl])v/$1Y/
+    - xlit/ZPXLYDLBWKOCNY/zpxlydlbwkocny/
+
+    - derive/^ai/ol/
+    - derive/^an/oj/
+    - derive/^ah/oh/
+    - derive/^ao/ok/
+    - derive/^ei/oz/
+    - derive/^en/of/
+    - derive/^er/or/
+    - derive/^ou/ob/
+
+    - derive/^(..).+$/$1/
+    - derive/^(..[[].).+$/$1/
+    # - derive/^([jqxy])u/$1v/
+    #- xform/[[]// ## 直接引导辅助码
+    ##  如果希望无论有无 [ 均可引导，取消注释的同时将 xform 改成 derive
+    ##  模糊音设置，以 in=ing 为例：
+    # - derive/^([^gkhvuirzcs])y/$1n/
+    # - derive/^(.)n/$1y/
+
