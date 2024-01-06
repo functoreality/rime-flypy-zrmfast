@@ -78,7 +78,7 @@ speller:
 
 translator:
   dictionary: flypy_zrmfast
-  spelling_hints: 1
+  spelling_hints: 2
   # enable_user_dict: true
   # preedit_format:
     # - "xform/((^|[ '])[bpmfdtnljqx])n/$1iao/"

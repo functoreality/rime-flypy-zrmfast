@@ -18,9 +18,11 @@ patch:
   #speller/algebra/@next: xform/[[]//
 
   #translator/dictionary: flypy_flypy ## 使用小鹤原版辅助码
-  #translator/spelling_hints: 0 ## 关闭单字编码提示
+  ##  默认为不超过 2 个字的候选项显示输入码；将 2 改为 0 可关闭编码提示，
+  ##  改为 1 则是只显示单字的输入码，依此类推。
+  translator/spelling_hints: 2
   translator/comment_format:
-    #- xform/^[^[]+[[]// ## 单字编码提示只显示辅助码部分
+    #- "xform/(^|[ '])[^[]+[[]/$1/" ## 编码提示只显示辅助码部分
 
   ##  改用其他双拼；相关设置见 pinyin_switch.yaml，例如直接引导辅助码
   #__include: pinyin_switch:/flypy2zrm ## 改用自然码双拼
