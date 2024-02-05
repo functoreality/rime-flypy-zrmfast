@@ -71,13 +71,43 @@ speller:
   delimiter: " '"
   ## speller 未允许 aj 表示 an
   algebra:
+    ## 增加转写以支持更多的全拼词库 不修改带[辅助码的词库
+    - xform/^([aoe])$/$1$1/ #对零声母的转写
+    - xform/^(ang)$/ah/ #对零声母的转写
+    - xform/^([^\[]*)iu$/$1Q/
+    - xform/^([^\[]*)ei$/$1W/
+    - xform/uan$/R/
+    - xform/^([^\[]*)[uv]e$/$1T/
+    - xform/^([^\[]*)un$/$1Y/
+    - xform/^sh/U/
+    - xform/^ch/I/
+    - xform/^zh/V/
+    - xform/^([^\[]*)uo$/$1O/
+    - xform/^([^\[]*)ie$/$1P/
+    - xform/i?ong$/S/
+    - xform/ing$|uai$/K/
+    - xform/^([^\[]+)ai$/$1D/
+    - xform/^([^\[]+)en$/$1F/
+    - xform/^([^\[]+)eng$/$1G/
+    - xform/[iu]ang$/L/
+    - xform/(.)ang$/$1H/
+    - xform/^([^\[]*)ian$/$1M/
+    - xform/^([^\[]+)an$/$1J/
+    - xform/^([^\[]+)ou$/$1Z/
+    - xform/^([^\[]*)[iu]a$/$1X/
+    - xform/^([^\[]*)iao$/$1N/
+    - xform/^([^\[]+)ao$/$1C/
+    - xform/^([^\[]*)ui$/$1V/
+    - xform/^([^\[]*)in$/$1B/
+    - xlit/QWRTYUIOPSDFGHJKLZXCVBNM/qwrtyuiopsdfghjklzxcvbnm/
+
     - derive/^(..).+$/$1/
     - derive/^(..[[].).+$/$1/
     - derive/^([jqxy])u/$1v/
     #- xform/[[]// ## 取消注释后：直接引导辅助码
 
 translator:
-  dictionary: flypy_zrmfast
+  dictionary: flypy_zrmfast.extended
   spelling_hints: 2
   # enable_user_dict: true
   # preedit_format:
@@ -123,11 +153,11 @@ custom_phrase:
   initial_quality: 1
 
 reverse_lookup:
-  dictionary: chaizi_flypy # stroke
+  dictionary: chaizi_flypy # 包含了stroke词库
   enable_completion: true
   prefix: "ab"
   suffix: "'"
-  tips: 〔部件组字〕 # 〔筆畫〕
+  tips: 〔部件组字〕 # 同时支持〔筆畫〕输入
   preedit_format:
     # - xlit/hspnz/一丨丿丶乙/
 
