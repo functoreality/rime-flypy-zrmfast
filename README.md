@@ -91,7 +91,13 @@ Rime 输入法配置文件，小鹤双拼（也可设置为用自然码/微软�
 	* 技术层面而言，该功能可能需要 librime 1.6.0 或以上版本才能生效（可以检查一下用户目录下 `installation.yaml` 文件中 `rime_version` 项是多少；一部分 1.5.3 版本也能支持）。如果用户所用系统能获取的最新版 Rime 不满足条件，而自己又有相应能力，可以考虑手动从 [librime 项目](https://github.com/rime/librime/releases) 安装或自行编译。
 
 ## 使用中的更多问题
-### 文件说明
+### 引入外部词库
+* 本方案仅提供基于 `luna_pinyin.dict.yaml` 转换得到的基础码表文件，希望引入更多的外部大词库的用户需要自行挂接相应的字典文件。
+* 如果引入的字典文件本身只包含待输入词组、而没有标注相应的拼音，则可以直接将该字典加入到本输入方案中。例如，[rime-settings 项目](https://github.com/wongdean/rime-settings) 所提供的 `luna_pinyin.poetry.dict.yaml` 文件就属于这种情况。
+	在这种情况下，Rime 会根据已有的单字编码自动生成这些词组的编码（包括双拼和双形部分）。
+* 如果字典文件中包含词组的全拼，则建议先进行 [码表转换](generate_dict/)，将全拼输入码转换为本项目方案所采用的 小鹤双拼+自然快手双形/小鹤双形 的形式。
+
+### 文件功能说明
 * `flypy_zrmfast.schema.yaml` 和 `flypy_zrmfast.dict.yaml` 为本方案的主要文件。`flypy_zrmfast.custom.yaml` 提供了一些常用设置项。其余文件均用于附加功能。
 * `luna_pinyin.custom.yaml` 为只使用全拼的用户提供，已经掌握双拼的用户无需保留该文件。
 * `default.custom.yaml` 仅用于声明本方案的依赖方案。如果用户已经有同名的文件，并且其中设置了 `schema_list` 选项，可以直接将本项目同名文件的内容添加到该选项下，而不必使用项目提供的这一文件。
@@ -107,14 +113,6 @@ Rime 输入法配置文件，小鹤双拼（也可设置为用自然码/微软�
 * 对于中州韵（Linux），据说 Arch Linux 源提供的 fcitx5-rime 可以在插件设置里开启 Lua 支持。
 	* 其他发行版的用户可以考虑这个 [ibus-rime AppImage](https://github.com/hchunhui/build)。遇到调频失效等问题可以试着删除各 userdb、build、sync 文件夹重新部署/同步。如果这一问题反复出现，或者重启/部署/同步之后经常忘掉之前输入的词，可以尝试在 `flypy_zrmfast.custom.yaml` 里开启“用户词典记录为文本格式”，或者看这个 AppImage 有没有发布新版本。
 * iRime（iOS）没用过，谁试了或许可以告诉作者（据说这个软件中启用配置文件夹要花钱，而这对使用本项目的配置是必需的）。
-
-### 引入外部词库
-* 为了支持形码输入，本方案在字典文件里写入了各字的形码。外部大词库通常不包含这样的形码，如果希望将它挂接到本输入方案之下，可以考虑先进行码表转换。
-* 如果使用小鹤原版辅助码，已经有另一位用户实现了 [Python 转换程序](https://github.com/boomker/rime-flypy-xhfast/blob/15664c597644bd41410ec4595cece88a6452a1bf/scripts/flypy_dict_generator_new.py)，需要配合相应的 [小鹤原版辅助码文件](https://github.com/boomker/rime-flypy-xhfast/blob/15664c597644bd41410ec4595cece88a6452a1bf/scripts/xhxm_map.py)。
-	* 我写下这段文字的时候，其中还没有提供自然快手形码的转换功能。不过有一定技术能力的用户可以考虑自行生成自然快手的辅助码文件，辅助码定义可以在 [这里](http://bbs.pinyin.thunisoft.com/forum.php?mod=viewthread&tid=28002) 找到。
-* 如果有相应的技术能力，也可以直接参考我当时生成现有码表所用的原理，见 [这里](https://github.com/functoreality/rime-flypy-zrmfast/issues/11#issuecomment-1486992023)。
-* 另外，如果外挂的码表中只有词组、没有单字，用户也可以考虑直接删除外挂码表中的拼音部分，Rime 会根据已有的单字编码自动生成这些词组的编码（包括双拼和双形部分）。如果这样处理，就不需要做复杂的码表转换。
-	* 不过考虑到一些词组可能包含多音字，这种直接删除码表中词组拼音的做法有时也会带来一些不便。
 
 ## 给进阶用户
 这一 Rime 输入方案的制作主要利用了这些文档，希望对 Rime 进行更深入的个性化配置的用户可以参考：

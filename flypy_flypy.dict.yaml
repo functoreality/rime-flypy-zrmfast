@@ -1,7 +1,8 @@
 # Rime dictionary
 # encoding: utf-8
-# 小鹤双拼加辅助码
-# 繁体字码表
+# 小鹤双拼加辅助码，繁体字码表
+# 基于 luna_pinyin.dict.yaml 及小鹤辅助码方案
+# 码表生成方式见 generate_dict/ ，可使用同样的方式转换其他基于全拼的扩充词库。
 ---
 name: flypy_flypy
 version: "2020.02.08"
@@ -1023,7 +1024,7 @@ use_preset_vocabulary: true
 㠠	lv[[
 㠡	nn[[
 㠢	hk[[
-㠣	li[[
+㠣	li[el
 㠥	lw[[
 㠥	lv[[
 㠦	fg[[
@@ -4399,7 +4400,7 @@ use_preset_vocabulary: true
 䓠	ta[[
 䓡	vi[[
 䓢	gu[[
-䓣	ll[[
+䓣	ll[cl
 䓤	hu[[
 䓥	la[[
 䓦	dm[[
@@ -5602,7 +5603,7 @@ use_preset_vocabulary: true
 䥒	jl[[
 䥓	qi[[
 䥔	su[[
-䥕	pp[[
+䥕	pp[jw
 䥖	tm[[
 䥗	kr[[
 䥘	cu[[
@@ -6895,8 +6896,8 @@ use_preset_vocabulary: true
 丹	dj[pa
 为	ww[dd
 主	vu[dw
-丼	dj[jd
-丼	jk[jd
+丼	dj[ad
+丼	jk[ad
 丽	li[ad
 举	ju[xl
 丿	pp[[
@@ -7093,7 +7094,7 @@ use_preset_vocabulary: true
 介	ga[rl	0%
 介	jp[rl	100%
 仌	bk[rr
-仌	nk[[
+仌	nk[rr
 仍	rg[rn
 从	cs[rr	100%
 从	zs[rr	0%
@@ -7760,7 +7761,7 @@ use_preset_vocabulary: true
 僛	qi[[
 僜	ig[[
 僜	dg[[
-僝	ij[[
+僝	ij[rz
 僞	ww[rw
 僟	ji[[
 僠	fj[[
@@ -7769,7 +7770,7 @@ use_preset_vocabulary: true
 僢	iy[[
 僣	jm[[
 僣	tp[[
-僤	dj[[
+僤	dj[rl
 僥	jn[rw	56.90%
 僥	yc[rw	44.10%
 僦	jq[ry
@@ -8293,7 +8294,7 @@ use_preset_vocabulary: true
 劌	sv[ed
 劍	jm[rd
 劎	jm[[
-劏	th[xd
+劏	th[[
 劐	hx[cd
 劐	ho[cd
 劑	ji[wd
@@ -8521,7 +8522,7 @@ use_preset_vocabulary: true
 半	bj[dl
 卋	ui[[
 卌	xi[al
-卍	wj[[
+卍	wj[vv
 华	hx[ru
 协	xp[ub
 卐	wj[[
@@ -9172,7 +9173,7 @@ use_preset_vocabulary: true
 唒	mq[[
 唒	qq[[
 唒	yz[[
-唓	ie[ki
+唓	ie[[
 唔	mu[kk	26.76%
 唔	wu[kk	73.24%
 唕	zc[[
@@ -9181,7 +9182,7 @@ use_preset_vocabulary: true
 唗	dz[[
 唘	qi[[
 唙	di[[
-唚	qb[kx
+唚	qb[[
 唛	ma[kw
 唜	mo[[
 唝	gs[kr
@@ -9364,7 +9365,7 @@ use_preset_vocabulary: true
 喢	ua[[
 喣	xu[[
 喤	hl[kw
-喥	du[[
+喥	du[ky
 喥	do[ky
 喦	np[[
 喦	yj[[
@@ -9382,8 +9383,8 @@ use_preset_vocabulary: true
 喯	ff[[
 喯	pf[[
 喰	cj[kl
-喰	qi[[
-喰	sy[[
+喰	qi[kl
+喰	sy[kl
 喱	li[kl
 喲	yc[ku	0%
 喲	yo[ku	100%
@@ -10046,7 +10047,7 @@ use_preset_vocabulary: true
 垱	dh[te
 垲	kd[tj
 垴	nc[tk
-垵	an[td
+垵	an[tn
 垶	xk[[
 垷	xm[[
 垸	hr[te
@@ -10055,8 +10056,8 @@ use_preset_vocabulary: true
 垹	bh[[
 垺	fu[tz
 垺	pw[tz
-垻	ba[[
-垻	bw[[	0%
+垻	ba[tr
+垻	bw[tr	0%
 垼	yi[[
 垽	yb[[
 垾	an[tg
@@ -10115,7 +10116,7 @@ use_preset_vocabulary: true
 埥	qk[[
 埦	wj[[
 埧	ju[[
-埨	ly[[
+埨	ly[tb
 埩	vg[[
 埪	ks[tg
 埫	is[tk
@@ -10144,7 +10145,7 @@ use_preset_vocabulary: true
 埽	sc[tj
 埾	ju[[
 埿	ni[[
-堀	jt[[
+堀	jt[ti
 堀	ku[ti
 堁	go[[
 堁	ke[[
@@ -10290,7 +10291,7 @@ use_preset_vocabulary: true
 塵	if[xt
 塶	lu[[
 塷	lu[[
-塸	ou[[
+塸	ou[tx
 塹	qm[it
 塺	mw[[
 塺	mo[[
@@ -10338,7 +10339,7 @@ use_preset_vocabulary: true
 墝	yc[[
 增	zg[to
 墟	xu[ty
-墠	uj[[
+墠	uj[tl
 墡	uj[tk
 墢	ba[[
 墢	fw[[
@@ -10416,7 +10417,7 @@ use_preset_vocabulary: true
 壞	gk[tb	0%
 壞	hk[tb	100%
 壟	ls[lt
-壠	ls[[
+壠	ls[tl
 壡	rv[[
 壢	li[tl
 壣	lb[[
@@ -10678,8 +10679,8 @@ use_preset_vocabulary: true
 妱	vc[[
 妲	da[nd
 妲	dj[nd
-妳	nd[[	0%
-妳	ni[nx
+妳	nd[nx	0%
+妳	ni[nx	100%
 妴	wj[[
 妴	yr[[
 妵	tz[[
@@ -10695,7 +10696,7 @@ use_preset_vocabulary: true
 妾	qp[ln
 妿	ee[[
 姀	he[nh
-姀	su[[
+姀	su[nh
 姁	xu[[
 姂	fa[[
 姃	vg[[
@@ -10813,8 +10814,8 @@ use_preset_vocabulary: true
 娗	tk[[
 娘	nx[nl	0%
 娘	nl[nl	100%
-娙	kg[[
-娙	xk[[
+娙	kg[ng
+娙	xk[ng
 娚	nc[[
 娛	yu[nt
 娜	na[ne	99.85%
@@ -10897,7 +10898,7 @@ use_preset_vocabulary: true
 婔	fw[[
 婕	jp[nr
 婖	tm[[
-婗	ni[[
+婗	ni[ne
 婘	jr[nv
 婘	qr[nv
 婙	jk[[
@@ -11087,9 +11088,9 @@ use_preset_vocabulary: true
 嫬	uu[[
 嫬	ve[[
 嫭	hu[nh
-嫮	ee[[
+嫮	ee[nk
 嫮	hu[nk
-嫮	yu[[
+嫮	yu[nk
 嫯	ao[[
 嫰	nf[[
 嫰	ny[[
@@ -11155,8 +11156,8 @@ use_preset_vocabulary: true
 嬟	yi[[
 嬠	cj[[
 嬡	ai[ny
-嬢	nx[[
-嬢	nl[[
+嬢	nx[ny
+嬢	nl[ny
 嬣	ng[[
 嬣	nk[[
 嬤	ma[nm
@@ -11462,8 +11463,8 @@ use_preset_vocabulary: true
 尘	if[xt
 尙	uh[[
 尚	uh[xk
-尛	ma[[
-尛	me[[
+尛	ma[xx
+尛	me[xx
 尛	mo[xx
 尜	ga[xx
 尝	ih[xs
@@ -11896,8 +11897,8 @@ use_preset_vocabulary: true
 嵺	ln[[
 嵻	kh[[
 嵼	ij[[
-嵽	di[[
-嵽	dp[[
+嵽	di[ej
+嵽	dp[ej
 嵾	cf[[
 嵿	dk[[
 嶀	dp[[
@@ -11968,7 +11969,7 @@ use_preset_vocabulary: true
 嶲	xi[ev
 嶳	de[[
 嶳	di[[
-嶴	ao[ye
+嶴	ao[[
 嶵	zv[[
 嶷	ni[er
 嶷	yi[er
@@ -12337,8 +12338,8 @@ use_preset_vocabulary: true
 廛	ij[gt
 廜	tu[[
 廝	si[ij
-廞	qb[[
-廞	xb[[
+廞	qb[gr
+廞	xb[gr
 廟	mn[gy
 廠	ih[ap
 廡	wu[gw
@@ -12464,7 +12465,7 @@ use_preset_vocabulary: true
 彀	gz[uy
 彂	fa[[
 彃	bi[[
-彄	kz[[
+彄	kz[gx
 彆	bp[kd
 彇	xn[[
 彈	dj[gl	22.28%
@@ -12499,7 +12500,7 @@ use_preset_vocabulary: true
 彛	yi[[
 彜	yi[[
 彝	yi[vc
-彞	yi[vc
+彞	yi[[
 彟	ho[ey
 彠	ho[ey
 彡	xm[[
@@ -12562,8 +12563,9 @@ use_preset_vocabulary: true
 従	zs[[
 徕	ld[il
 徖	cs[[
-得	dw[ic	3%
+得	dd[ic	0%
 得	de[ic	97%
+得	dw[ic	3%
 得	di[ic	0%
 徘	pd[if
 徙	tu[ir	0%
@@ -12783,9 +12785,9 @@ use_preset_vocabulary: true
 怾	vi[[
 怿	yi[xl
 恀	ii[[
-恁	nf[rx
-恁	nb[rx
-恁	rf[[	100%
+恁	nf[rx	100%
+恁	nb[rx	0%
+恁	rf[rx	100%
 恂	xy[xo
 恃	ui[xc
 恄	ji[[
@@ -12829,7 +12831,7 @@ use_preset_vocabulary: true
 恣	zi[dx
 恤	xu[xx
 恥	ii[ev
-恦	xl[[
+恦	xl[xk
 恧	er[ex
 恧	nv[ex
 恨	hf[xg
@@ -12985,9 +12987,9 @@ use_preset_vocabulary: true
 惠	hv[ax
 惡	ee[yx	95%
 惡	wu[yx	5%
-惢	rv[[
+惢	rv[xx
 惢	so[xx
-惢	xb[[
+惢	xb[xx
 惣	zs[[
 惤	jm[[
 惤	xm[[
@@ -13656,9 +13658,9 @@ use_preset_vocabulary: true
 拚	ff[[	0%
 拚	pj[[	11.86%
 拚	pb[[	88.14%
-招	qn[[	0%
-招	uc[[	0%
-招	vc[fk
+招	qn[fk	0%
+招	uc[fk	0%
+招	vc[fk	100%
 拜	bd[uf
 拝	bd[[
 拞	di[[
@@ -13976,7 +13978,7 @@ use_preset_vocabulary: true
 揋	ww[[
 揌	sd[[
 揍	zz[ft
-揎	xr[[
+揎	xr[fg
 描	mn[ft
 提	di[fr	0.05%
 提	ui[fr	0%
@@ -14359,7 +14361,7 @@ use_preset_vocabulary: true
 擞	sz[fw
 擟	mi[[
 擠	ji[fl
-擡	td[fk
+擡	td[[
 擢	vo[ff
 擣	dc[fe
 擤	xk[fl
@@ -14844,7 +14846,7 @@ use_preset_vocabulary: true
 晙	jy[ow
 晙	zy[ow
 晚	wj[ov
-晛	xm[[
+晛	xm[oe
 晜	di[[
 晜	ky[[
 晝	vz[id
@@ -14907,7 +14909,7 @@ use_preset_vocabulary: true
 暍	ye[[
 暎	yk[[
 暏	uu[[
-暐	ww[[
+暐	ww[ow
 暑	uu[oo
 暒	qk[ou
 暓	mc[[
@@ -15062,7 +15064,7 @@ use_preset_vocabulary: true
 月	rz[ka	0%
 月	yt[ka	100%
 有	yz[uo
-朊	gr[[
+朊	gr[oe
 朊	rr[oe
 朋	pg[oo
 朌	bj[[
@@ -15190,8 +15192,8 @@ use_preset_vocabulary: true
 杲	go[om
 杳	mn[mo	0%
 杳	yc[mo	100%
-杴	qm[jr
-杴	xm[jr
+杴	qm[[
+杴	xm[[
 杵	iu[mw
 杶	iy[[
 杶	ty[[
@@ -15546,8 +15548,8 @@ use_preset_vocabulary: true
 梙	hr[[
 梚	wj[[
 梛	no[[
-梜	jx[[
-梜	jp[[
+梜	jx[mj
+梜	jp[mj
 條	di[wm	0%
 條	tn[wm	100%
 梞	ji[[
@@ -16212,7 +16214,7 @@ use_preset_vocabulary: true
 櫉	iu[[
 櫋	mm[[
 櫌	yz[[
-櫍	vi[[
+櫍	vi[mr
 櫎	gl[[
 櫎	go[[
 櫎	hl[[
@@ -16262,7 +16264,7 @@ use_preset_vocabulary: true
 櫷	gv[[
 櫸	ju[ml
 櫹	xn[[
-櫺	lk[mh
+櫺	lk[[
 櫻	yk[mn
 櫼	jm[[
 櫼	qm[[
@@ -16659,7 +16661,7 @@ use_preset_vocabulary: true
 氹	dh[[
 氻	le[[
 氼	ni[ur
-氼	nn[[
+氼	nn[ur
 氽	ty[[
 氾	fj[df
 氿	iz[dj
@@ -17082,7 +17084,7 @@ use_preset_vocabulary: true
 浼	mm[dv
 浽	sv[[
 浾	ig[[
-浿	pw[[
+浿	pw[dr
 涀	jm[[
 涀	xm[[
 涁	uf[[
@@ -17561,7 +17563,7 @@ use_preset_vocabulary: true
 漊	lv[dn
 漋	ls[du
 漌	jb[[
-漍	go[[
+漍	go[dy
 漎	cs[[
 漏	lz[dy
 漐	vi[[
@@ -17751,7 +17753,7 @@ use_preset_vocabulary: true
 澨	ui[[
 澩	xt[[
 澪	lk[ds
-澫	mj[[
+澫	mj[dw
 澬	zi[[
 澭	ys[df
 澮	hv[ds
@@ -18123,7 +18125,7 @@ use_preset_vocabulary: true
 烐	vz[[
 烑	yc[[
 烒	ui[[
-烓	gv[[
+烓	gv[ht
 烓	ww[ht
 烔	ts[hk
 烕	mp[[
@@ -18404,7 +18406,7 @@ use_preset_vocabulary: true
 熮	ln[[
 熮	lq[[
 熯	hj[[
-熰	ou[[
+熰	ou[hx
 熱	re[fh
 熲	js[br
 熲	yk[br
@@ -18424,7 +18426,7 @@ use_preset_vocabulary: true
 熾	ii[hb	100%
 熾	vi[hb	0%
 熿	hl[[
-燀	ij[[
+燀	ij[hl
 燁	ye[hu
 燂	qm[[
 燂	tj[[
@@ -18451,7 +18453,7 @@ use_preset_vocabulary: true
 燓	ff[[
 燔	fj[ht
 燕	yj[nh
-燖	xy[[
+燖	xy[hc
 燗	lj[[
 燘	mw[[
 燙	th[dh
@@ -18512,7 +18514,7 @@ use_preset_vocabulary: true
 爆	bc[hu	100%
 爆	bo[hu	0%
 爇	re[[
-爇	ro[ch
+爇	ro[[
 爈	lv[[
 爉	la[[
 爊	ao[[
@@ -18984,7 +18986,7 @@ use_preset_vocabulary: true
 玈	lu[[
 玉	yu[wd
 玊	su[wd
-玊	xq[[
+玊	xq[wd
 王	wh[at	100%
 王	yu[at	0%
 玌	ba[[
@@ -19245,7 +19247,7 @@ use_preset_vocabulary: true
 瑝	hl[ww
 瑞	rv[we
 瑟	se[wb
-瑠	lq[[
+瑠	lq[wt
 瑡	ui[[
 瑢	rs[wk
 瑣	so[wr
@@ -19309,10 +19311,10 @@ use_preset_vocabulary: true
 璒	dg[wa
 璓	xq[[
 璔	zg[[
-璕	xy[[
+璕	xy[wc
 璖	ju[[
 璖	qu[[
-璗	dh[[
+璗	dh[dy
 璘	lb[wl
 璙	ln[[
 璚	ju[[
@@ -19359,9 +19361,9 @@ use_preset_vocabulary: true
 璽	xi[dy
 璾	ji[[
 璾	qi[[
-璿	jy[[
-璿	xr[[
-璿	xy[[
+璿	jy[wr
+璿	xr[wr
+璿	xy[wr
 瓀	ru[we
 瓀	rr[we
 瓁	hu[[
@@ -19369,7 +19371,7 @@ use_preset_vocabulary: true
 瓂	gd[[
 瓃	lw[[
 瓄	du[[
-瓅	li[[
+瓅	li[wl
 瓆	vi[[
 瓇	rz[[
 瓈	li[[
@@ -19524,7 +19526,7 @@ use_preset_vocabulary: true
 畈	fj[ty
 畉	fu[[
 畊	gg[tj
-畊	jk[[
+畊	jk[tj
 畋	tm[tw
 畋	wf[tw
 界	jp[tl
@@ -20196,8 +20198,8 @@ use_preset_vocabulary: true
 睧	hy[[
 睨	ni[oe
 睩	lu[[
-睪	gc[pg
-睪	yi[pg
+睪	gc[[
+睪	yi[[
 睫	jp[or
 睬	cd[om
 睭	vz[[
@@ -20382,7 +20384,7 @@ use_preset_vocabulary: true
 矼	gh[ug
 矼	jl[ug
 矼	ql[ug
-矽	xi[[
+矽	xi[ux
 矾	fj[uf
 矿	kl[ug
 砀	dh[up
@@ -20435,8 +20437,8 @@ use_preset_vocabulary: true
 砤	to[[
 砥	di[ud
 砥	vi[ud
-砦	id[[
-砦	yj[[
+砦	id[vu
+砦	yj[vu
 砦	vd[vu
 砧	vf[uk
 砨	ai[[
@@ -20455,7 +20457,7 @@ use_preset_vocabulary: true
 砱	lk[[
 砲	pc[[
 砳	le[uu
-砳	qt[[
+砳	qt[uu
 破	po[uy
 砵	bo[ub
 砶	po[[
@@ -20545,8 +20547,8 @@ use_preset_vocabulary: true
 硾	vv[[
 硿	ks[ug
 碀	cg[[
-碁	ji[[	0%
-碁	qi[[	100%
+碁	ji[qu	0%
+碁	qi[qu	100%
 碂	cs[[
 碂	zs[[
 碃	qk[uo
@@ -20731,10 +20733,10 @@ use_preset_vocabulary: true
 礍	xp[[
 礎	iu[ui
 礏	ye[[
-礐	hu[[
-礐	le[[
-礐	qt[[
-礐	yu[[
+礐	hu[xu
+礐	le[xu
+礐	qt[xu
+礐	yu[xu
 礑	dh[[
 礒	yi[[
 礓	jl[ua
@@ -20786,13 +20788,13 @@ use_preset_vocabulary: true
 示	ui[ex	100%
 礻	ui[[
 礼	li[pv
-礽	rg[[
+礽	rg[pn
 社	ue[pt
 礿	yt[[
 祀	si[ps
 祁	qi[pe
 祂	ta[py
-祂	yi[[
+祂	yi[py
 祃	ma[pm
 祄	jp[[
 祄	xp[[
@@ -21405,7 +21407,7 @@ use_preset_vocabulary: true
 筈	gx[[
 等	dg[vc
 筊	jn[vx
-筊	yc[[
+筊	yc[vx
 筋	jb[vl
 筌	qr[vw
 筍	sy[vy
@@ -21577,7 +21579,7 @@ use_preset_vocabulary: true
 篠	tn[[
 篠	xn[[
 篡	cr[vs
-篢	gs[[
+篢	gs[vr
 篣	ph[[
 篤	du[vm
 篥	li[vm
@@ -21908,8 +21910,8 @@ use_preset_vocabulary: true
 紀	ji[sj
 紁	ia[[
 紂	vz[sc
-紃	jy[[
-紃	xy[[
+紃	jy[si
+紃	xy[si
 約	yc[su	0.02%
 約	yt[su	99.98%
 紅	gs[sg	0.02%
@@ -21945,7 +21947,7 @@ use_preset_vocabulary: true
 紛	ff[sd
 紜	yy[ss
 紝	rf[sr
-紞	dj[[
+紞	dj[sv
 紟	jb[[
 素	su[fx
 紡	fh[sf
@@ -21959,7 +21961,7 @@ use_preset_vocabulary: true
 紩	vi[[
 紪	qi[[
 紫	zi[vx
-紬	iz[[
+紬	iz[sy
 紭	hs[[
 紮	za[fv	6.72%
 紮	va[fv	93.28%
@@ -22040,7 +22042,7 @@ use_preset_vocabulary: true
 絧	ts[[
 絨	rs[su
 絩	tn[[
-絪	yb[[
+絪	yb[sd
 絫	lw[[
 絬	xp[[
 絭	jr[[
@@ -22070,7 +22072,7 @@ use_preset_vocabulary: true
 綁	bh[se
 綂	lq[[
 綃	xn[so
-綄	wj[[
+綄	wj[se
 綅	qb[[
 綅	xm[[
 綆	gg[sg
@@ -22083,7 +22085,7 @@ use_preset_vocabulary: true
 綌	xi[sk
 綌	yu[sk
 綍	fu[[
-綎	tk[[
+綎	tk[sz
 綏	sv[sn
 綐	dv[[
 綑	ky[fm
@@ -22099,8 +22101,8 @@ use_preset_vocabulary: true
 続	xu[[
 綜	zg[sx	0%
 綜	zs[sx	100%
-綝	if[[
-綝	lb[[
+綝	if[sm
+綝	lb[sm
 綞	iv[[
 綞	do[[
 綟	li[[
@@ -22113,11 +22115,11 @@ use_preset_vocabulary: true
 綤	uc[[
 綥	qi[[
 綦	qi[qx
-綧	vy[[
+綧	vy[sz
 綨	qi[[
 綩	wj[[
-綪	qm[[
-綪	qk[[
+綪	qm[so
+綪	qk[so
 綫	xm[sj
 綬	uz[sy
 維	ww[sf
@@ -22286,8 +22288,8 @@ use_preset_vocabulary: true
 縭	li[sd
 縮	su[sb	0.62%
 縮	so[sb	99.38%
-縯	yj[[
-縯	yb[[
+縯	yj[sb
+縯	yb[sb
 縰	xi[[
 縱	zs[sr
 縲	lw[sx
@@ -22333,8 +22335,8 @@ use_preset_vocabulary: true
 繎	rj[[
 繏	xu[[
 繏	xr[[
-繐	hv[hx
-繐	sv[hx
+繐	hv[[
+繐	sv[[
 繑	qn[[
 繒	zg[so
 繓	zv[[
@@ -22400,7 +22402,7 @@ use_preset_vocabulary: true
 纄	pg[[
 纅	li[[
 纅	yc[[
-纆	mo[[
+纆	mo[st
 纇	lw[[
 纈	xp[sr
 纉	zr[[
@@ -22416,7 +22418,7 @@ use_preset_vocabulary: true
 纒	ij[[
 纓	yk[sn
 纔	cd[ap
-纕	xl[[
+纕	xl[sy
 纖	xm[sq
 纗	zv[[
 纘	zr[sr
@@ -22817,7 +22819,7 @@ use_preset_vocabulary: true
 翨	ui[[
 翩	pm[hx
 翪	zs[[
-翫	wj[[
+翫	wj[we
 翬	hv[xi
 翭	hz[[
 翮	ge[ax
@@ -24447,7 +24449,7 @@ use_preset_vocabulary: true
 蔂	lo[[
 蔃	jl[ci
 蔃	ql[ci
-蔄	mj[[
+蔄	mj[ck
 蔅	yj[[
 蔆	lg[[
 蔆	lk[[
@@ -24630,7 +24632,7 @@ use_preset_vocabulary: true
 薗	yr[[
 薘	da[cz
 薙	ti[cf
-薙	vi[[
+薙	vi[cf
 薚	uh[[
 薚	th[[
 薛	xt[cu
@@ -24666,7 +24668,7 @@ use_preset_vocabulary: true
 薱	dv[[
 薲	pb[[
 薲	pk[[
-薳	ww[cz
+薳	ww[[
 薳	yr[[
 薴	ng[cd
 薴	nk[cd
@@ -24846,7 +24848,7 @@ use_preset_vocabulary: true
 虇	hr[[
 虇	qr[[
 虈	xn[[
-虉	yi[[
+虉	yi[cn
 虊	lr[[
 虋	mf[[
 虌	bp[[
@@ -25172,7 +25174,7 @@ use_preset_vocabulary: true
 蜽	ll[[
 蜾	go[ig
 蜿	wj[iv
-蝀	ds[[
+蝀	ds[id
 蝁	ee[[
 蝂	bj[[
 蝃	di[[
@@ -25836,7 +25838,7 @@ use_preset_vocabulary: true
 襂	uj[[
 襃	bc[[
 襄	xl[wy
-襆	pu[jn
+襆	pu[[
 襇	jm[po
 襈	jr[[
 襈	vr[[
@@ -25953,8 +25955,8 @@ use_preset_vocabulary: true
 覣	wo[[
 覤	hu[[
 覤	xi[[
-覥	mm[[
-覥	tm[[
+覥	mm[qe
+覥	tm[qe
 覦	yu[re
 覧	lj[[
 覨	ee[[
@@ -26007,7 +26009,7 @@ use_preset_vocabulary: true
 觊	ji[ee
 觋	xi[ge
 觌	di[ue
-觍	tm[[
+觍	tm[qe
 觎	yu[re
 觏	gz[je
 觐	jb[ne
@@ -26101,8 +26103,8 @@ use_preset_vocabulary: true
 訍	ia[[
 訍	id[[
 討	tc[yc
-訏	xu[[
-訏	yu[[
+訏	xu[yy
+訏	yu[yy
 訐	gj[yg
 訐	jm[yg
 訐	jp[yg
@@ -26197,7 +26199,7 @@ use_preset_vocabulary: true
 詚	da[[
 詛	zu[yq
 詜	tc[[
-詝	vu[[
+詝	vu[ya
 詞	ci[yk
 詟	ve[lk
 詠	ys[ky
@@ -26213,7 +26215,7 @@ use_preset_vocabulary: true
 詨	jn[[
 詨	xn[[
 詩	ui[yc
-詪	hf[[
+詪	hf[yg
 詫	ia[yq
 詬	gz[yk
 詭	gv[yv
@@ -26351,8 +26353,8 @@ use_preset_vocabulary: true
 諐	yj[[
 諑	vo[yn
 諒	ll[yx
-諓	jm[[
-諓	qm[[
+諓	jm[yj
+諓	qm[yj
 諔	iu[[
 諔	vu[[
 諕	hc[[
@@ -26369,7 +26371,7 @@ use_preset_vocabulary: true
 諜	dp[ym
 諝	xu[yo
 諞	pm[yc
-諟	ui[[
+諟	ui[yr
 諠	xr[[
 諡	ui[ym
 諢	hv[yi
@@ -26392,8 +26394,8 @@ use_preset_vocabulary: true
 諰	xi[[
 諱	hv[yw	100%
 諱	ww[yw	0%
-諲	yj[[
-諲	yb[[
+諲	yj[yt
+諲	yb[yt
 諳	an[yo
 諴	xm[yk
 諵	nj[[
@@ -26529,7 +26531,7 @@ use_preset_vocabulary: true
 譑	jn[[
 譑	qn[[
 譒	bo[[
-譓	hv[[
+譓	hv[yx
 譔	vr[[
 譕	mo[[
 譕	mz[[
@@ -27333,7 +27335,7 @@ use_preset_vocabulary: true
 跦	vu[[
 跧	qr[[
 跨	kx[zk
-跩	ui[[
+跩	ui[zy
 跩	vk[zy
 跪	gv[zv
 跫	qs[gr
@@ -27494,7 +27496,7 @@ use_preset_vocabulary: true
 蹞	kv[[
 蹞	qk[[
 蹟	ji[zd
-蹠	vi[[
+蹠	vi[zu
 蹡	ql[[
 蹢	di[zk
 蹢	vi[zk
@@ -27568,7 +27570,7 @@ use_preset_vocabulary: true
 躚	xm[zz
 躛	ww[[
 躜	zr[zr
-躝	lj[zj
+躝	lj[[
 躞	xp[zy
 躟	rh[[
 躠	sa[[
@@ -27636,8 +27638,8 @@ use_preset_vocabulary: true
 軚	dd[[
 軛	ee[iv
 軜	na[[
-軝	qi[[
-軝	vi[[
+軝	qi[iu
+軝	vi[iu
 軞	mc[[
 軟	rr[ir
 軠	rf[[
@@ -27746,8 +27748,8 @@ use_preset_vocabulary: true
 輴	iy[[
 輴	dy[[
 輵	ge[[
-輶	qq[[
-輶	yz[[
+輶	qq[iy
+輶	yz[iy
 輷	hs[[
 輷	ju[[
 輸	uu[id
@@ -28347,7 +28349,7 @@ use_preset_vocabulary: true
 鄦	xu[[
 鄧	dg[ye
 鄨	bi[[
-鄩	xb[[
+鄩	xb[ee
 鄪	bi[[
 鄫	cg[be
 鄬	ww[[
@@ -28512,7 +28514,7 @@ use_preset_vocabulary: true
 醯	xi[ym
 醰	tj[[
 醱	po[yd
-醲	ns[[
+醲	ns[yn
 醳	yi[[
 醴	li[ya
 醵	ju[yu
@@ -28595,7 +28597,7 @@ use_preset_vocabulary: true
 釲	si[[
 釳	qi[[
 釳	xi[[
-釴	yi[[
+釴	yi[jy
 釵	id[ji
 釶	ue[[
 釶	ui[[
@@ -28606,7 +28608,7 @@ use_preset_vocabulary: true
 釼	jm[[
 釽	pi[[
 釾	ye[[
-釿	yb[[
+釿	yb[jj
 鈀	ba[jb	90.38%
 鈀	pa[jb	9.62%
 鈁	fh[jf
@@ -28704,7 +28706,7 @@ use_preset_vocabulary: true
 鉈	to[jb	38.03%
 鉉	xm[jy
 鉉	xr[jy
-鉊	vc[[
+鉊	vc[jk
 鉋	bc[[	4.64%
 鉋	pc[[	95.36%
 鉌	he[[
@@ -28736,9 +28738,9 @@ use_preset_vocabulary: true
 鉣	qu[[
 鉣	qt[[
 鉤	gz[js
-鉥	uu[[
+鉥	uu[ju
 鉦	vg[jv
-鉧	mu[[
+鉧	mu[jm
 鉨	ni[[
 鉨	xi[[
 鉩	np[[
@@ -28749,7 +28751,7 @@ use_preset_vocabulary: true
 鉬	mu[jo
 鉭	dj[jd
 鉭	tj[jd
-鉮	uf[[
+鉮	uf[ju
 鉯	yi[[
 鉰	si[[
 鉱	kl[[
@@ -28847,7 +28849,7 @@ use_preset_vocabulary: true
 銿	vs[[
 鋀	dz[[
 鋁	lv[jk
-鋂	mw[jo
+鋂	mw[[
 鋃	lh[jl
 鋄	wj[[
 鋅	xb[ju
@@ -28868,7 +28870,7 @@ use_preset_vocabulary: true
 鋎	wj[[
 鋏	jx[jj
 鋏	jp[jj
-鋐	hs[[
+鋐	hs[js
 鋑	cr[[
 鋑	jr[[
 鋒	fg[jf
@@ -28913,7 +28915,7 @@ use_preset_vocabulary: true
 鋶	lv[jv
 鋷	zv[[
 鋸	ju[jk
-鋹	ih[[
+鋹	ih[ji
 鋺	wj[[
 鋺	yr[[
 鋻	jm[[
@@ -28960,8 +28962,8 @@ use_preset_vocabulary: true
 錜	np[[
 錝	cs[[
 錝	zs[[
-錞	iy[[
-錞	dv[[
+錞	iy[jz
+錞	dv[jz
 錟	tj[jh
 錟	xm[jh
 錟	yj[jh
@@ -29064,7 +29066,7 @@ use_preset_vocabulary: true
 鍫	qq[[
 鍬	qn[jh
 鍬	qq[jh
-鍭	hz[[
+鍭	hz[ju
 鍮	tz[[
 鍯	cs[[
 鍰	hr[jy
@@ -29107,7 +29109,7 @@ use_preset_vocabulary: true
 鎐	zu[[
 鎑	ye[[
 鎒	nz[[
-鎓	wg[[
+鎓	wg[jx
 鎔	rs[jk
 鎕	th[[
 鎖	so[jr
@@ -29167,7 +29169,7 @@ use_preset_vocabulary: true
 鏄	tr[[
 鏅	xq[[
 鏆	gr[[
-鏇	xr[[
+鏇	xr[fr
 鏈	lm[jz
 鏉	uz[[
 鏊	ao[fj
@@ -29175,9 +29177,9 @@ use_preset_vocabulary: true
 鏌	mo[jd
 鏍	lo[[
 鏎	bi[[
-鏏	hv[[
-鏏	sv[[
-鏏	ww[[
+鏏	hv[je
+鏏	sv[je
+鏏	ww[je
 鏐	lq[jp
 鏑	di[jk
 鏑	ve[jk
@@ -29194,7 +29196,7 @@ use_preset_vocabulary: true
 鏘	jl[jc
 鏘	ql[jc
 鏙	cv[[
-鏚	qi[wx
+鏚	qi[[
 鏛	ih[[
 鏜	th[jt
 鏝	mj[jy
@@ -29230,7 +29232,7 @@ use_preset_vocabulary: true
 鏹	jl[ji
 鏹	ql[ji
 鏺	po[jd
-鏻	lb[[
+鏻	lb[jl
 鏼	se[[
 鏼	so[[
 鏽	xq[jn
@@ -29266,7 +29268,7 @@ use_preset_vocabulary: true
 鐔	tj[ju
 鐕	zj[[
 鐖	ji[[
-鐗	jm[jo
+鐗	jm[[
 鐘	vs[jv
 鐙	dg[ja
 鐚	ya[[
@@ -29285,7 +29287,7 @@ use_preset_vocabulary: true
 鐦	kd[jk
 鐧	jm[jo
 鐨	fw[jr
-鐩	sv[[
+鐩	sv[jz
 鐪	lu[[
 鐫	jr[jn
 鐬	hv[[
@@ -29314,7 +29316,7 @@ use_preset_vocabulary: true
 鐽	da[jz
 鐾	bi[uj
 鐿	yi[jx
-鑀	ai[jy
+鑀	ai[[
 鑁	zs[[
 鑂	xy[[
 鑃	dn[[
@@ -29620,7 +29622,7 @@ use_preset_vocabulary: true
 镜	jk[je
 镝	di[jk
 镞	zu[ju
-镟	xr[fr
+镟	xr[[
 镠	lq[jp
 镡	tj[ju
 镢	jt[jr
@@ -29743,7 +29745,7 @@ use_preset_vocabulary: true
 闆	pj[my
 闇	an[oo
 闈	ww[mw
-闉	yb[[
+闉	yb[mt
 闊	ko[mk
 闋	gv[mt
 闋	qt[mt
@@ -29843,7 +29845,7 @@ use_preset_vocabulary: true
 阠	xb[[
 阠	xy[[
 阡	qm[eq
-阢	wu[[
+阢	wu[ee
 阣	qi[[
 阣	yi[[
 阤	to[[
@@ -29993,9 +29995,9 @@ use_preset_vocabulary: true
 階	jp[el
 随	sv[ez
 隐	yb[ex
-隑	ai[[
-隑	gd[[
-隑	qi[[
+隑	ai[ej
+隑	gd[ej
+隑	qi[ej
 隒	qm[[
 隒	yj[[
 隓	hv[[
@@ -30022,7 +30024,7 @@ use_preset_vocabulary: true
 隡	sa[[
 隢	rc[[
 隣	lb[[
-隤	tv[[
+隤	tv[er
 隥	dg[[
 隦	pi[[
 隧	sv[ez
@@ -30033,7 +30035,7 @@ use_preset_vocabulary: true
 隫	ff[[
 隬	ni[[
 隭	er[[
-隮	ji[[
+隮	ji[el
 隯	dc[[
 隰	ui[eh
 隰	xi[eh
@@ -30161,7 +30163,7 @@ use_preset_vocabulary: true
 霏	fw[yf
 霐	hs[[
 霐	wg[[
-霑	vj[[
+霑	vj[dk
 霒	yb[[
 霒	yk[[
 霓	ni[ye
@@ -30246,7 +30248,7 @@ use_preset_vocabulary: true
 靖	jk[lo
 靗	ig[[
 靘	qk[fb
-靘	yj[[
+靘	yj[fb
 静	jk[fl
 靚	jk[fe	0.85%
 靚	ll[fe	99.15%
@@ -30298,7 +30300,7 @@ use_preset_vocabulary: true
 靾	yi[[
 靿	yc[gl
 靿	yz[gl
-鞀	tc[ey
+鞀	tc[[
 鞁	bw[gy
 鞁	to[gy
 鞂	he[[
@@ -30477,7 +30479,7 @@ use_preset_vocabulary: true
 頒	bj[br
 頓	du[tr	1.36%
 頓	dy[tr	98.64%
-頔	di[[
+頔	di[yr
 頕	dj[[
 頕	dm[[
 頖	pj[[
@@ -30493,7 +30495,7 @@ use_preset_vocabulary: true
 頝	qn[[
 頞	ee[[
 頟	ee[[
-頠	ww[[
+頠	ww[dr
 頡	jx[ur	0%
 頡	jp[ur	95.52%
 頡	xp[ur	4.48%
@@ -30769,7 +30771,7 @@ use_preset_vocabulary: true
 餅	bk[uk
 餆	yc[[
 餇	ts[[
-餈	ci[[
+餈	ci[my
 餉	xl[uk
 養	yh[yl
 餋	jr[[
@@ -30998,7 +31000,7 @@ use_preset_vocabulary: true
 駇	pu[[
 駇	wf[[
 駈	qu[[
-駉	js[[
+駉	js[mk
 駊	po[[
 駋	vc[[
 駌	yr[[
@@ -31008,7 +31010,7 @@ use_preset_vocabulary: true
 駐	vu[mv
 駑	nu[nm
 駒	ju[mk
-駓	pi[[
+駓	pi[mp
 駔	ch[mq
 駔	zh[mq
 駔	zu[mq
@@ -31035,8 +31037,8 @@ use_preset_vocabulary: true
 駨	xr[[
 駨	xy[[
 駩	qr[[
-駪	uf[[
-駪	xm[[
+駪	uf[me
+駪	xm[me
 駫	js[[
 駬	er[[
 駭	hd[mr	100%
@@ -31056,7 +31058,7 @@ use_preset_vocabulary: true
 駺	lh[[
 駺	ll[[
 駻	hj[[
-駼	tu[[
+駼	tu[mh
 駽	jr[[
 駽	xr[[
 駾	tv[[
@@ -31081,7 +31083,7 @@ use_preset_vocabulary: true
 騎	qi[mk	99.18%
 騏	qi[mb
 騐	yj[[
-騑	fw[[
+騑	fw[mf
 騒	sc[[
 験	yj[[
 騔	ge[[
@@ -31097,7 +31099,7 @@ use_preset_vocabulary: true
 騜	hl[[
 騝	jm[[
 騝	xt[[
-騞	ho[[
+騞	ho[mu
 騟	yu[[
 騠	ti[mr
 騡	qr[[
@@ -31154,7 +31156,7 @@ use_preset_vocabulary: true
 驍	rc[mw
 驍	xn[mw
 驍	yc[mw
-驎	lb[[
+驎	lb[ml
 驏	ij[mz
 驏	vj[mz
 驐	dy[[
@@ -31524,7 +31526,7 @@ use_preset_vocabulary: true
 魾	pi[[
 魿	lb[[
 魿	lk[[
-鮀	to[[
+鮀	to[ab
 鮁	ba[ad
 鮁	bo[ad
 鮂	qq[[
@@ -31533,7 +31535,7 @@ use_preset_vocabulary: true
 鮅	bi[[
 鮆	ji[va
 鮇	ww[[
-鮈	ju[[
+鮈	ju[ak
 鮉	iz[[
 鮉	dn[[
 鮊	bo[ab
@@ -31558,9 +31560,9 @@ use_preset_vocabulary: true
 鮝	xl[ja
 鮞	er[ae
 鮟	an[an
-鮠	ww[[
-鮡	tn[[
-鮡	vc[[
+鮠	ww[av
+鮡	tn[av
+鮡	vc[av
 鮢	vu[[
 鮣	yb[ae
 鮤	lp[[
@@ -31644,7 +31646,7 @@ use_preset_vocabulary: true
 鯭	mg[[
 鯮	zs[[
 鯯	ji[[
-鯰	nm[[
+鯰	nm[ax
 鯴	ui[ai
 鯵	uf[[
 鯶	hr[[
@@ -31653,7 +31655,7 @@ use_preset_vocabulary: true
 鯸	hz[[
 鯹	xk[[
 鯺	vu[[
-鯻	la[[
+鯻	la[ad
 鯼	zs[[
 鯽	ji[ae
 鯾	bm[[
@@ -31670,7 +31672,7 @@ use_preset_vocabulary: true
 鰇	rz[[
 鰈	dp[am
 鰉	hl[aw
-鰊	lm[[
+鰊	lm[aj
 鰋	yj[[
 鰌	qq[[
 鰌	yz[[
@@ -31718,7 +31720,7 @@ use_preset_vocabulary: true
 鰳	le[al
 鰴	hv[[
 鰵	mm[pa
-鰶	ji[[
+鰶	ji[ax
 鰷	tn[am
 鰸	qu[[
 鰹	jm[at
@@ -31731,7 +31733,7 @@ use_preset_vocabulary: true
 鰾	bn[ax
 鰾	pn[ax
 鰿	ji[[
-鱀	ji[[
+鱀	ji[ga
 鱁	vu[[
 鱂	ih[ac
 鱃	qq[[
@@ -31763,7 +31765,7 @@ use_preset_vocabulary: true
 鱗	lb[al
 鱘	xy[ac
 鱙	mn[[
-鱚	xi[[
+鱚	xi[ak
 鱝	ff[ar
 鱞	gr[[
 鱞	hr[[
@@ -32023,7 +32025,7 @@ use_preset_vocabulary: true
 鵌	tu[[
 鵍	hr[[
 鵎	to[[
-鵏	bu[[
+鵏	bu[fn
 鵐	wu[gn
 鵑	jr[kn
 鵒	yu[bn
@@ -32114,7 +32116,7 @@ use_preset_vocabulary: true
 鶝	fu[[
 鶞	iy[[
 鶟	tu[[
-鶠	yj[[
+鶠	yj[kn
 鶡	he[on
 鶢	yr[[
 鶣	bb[[
@@ -32134,9 +32136,9 @@ use_preset_vocabulary: true
 鶮	he[[
 鶯	yk[cn
 鶰	yr[[
-鶱	qm[[
-鶱	xm[[
-鶱	xr[[
+鶱	qm[bn
+鶱	xm[bn
+鶱	xr[bn
 鶲	wg[bn
 鶳	ui[[
 鶴	hc[dn	0%
@@ -32169,7 +32171,7 @@ use_preset_vocabulary: true
 鷆	tm[[
 鷇	gz[[
 鷇	kz[[
-鷈	ti[pn
+鷈	ti[[
 鷉	ti[pn
 鷊	ni[an
 鷊	yi[an
@@ -32199,8 +32201,8 @@ use_preset_vocabulary: true
 鷜	lz[[
 鷝	bi[[
 鷞	ul[[
-鷟	vo[[
-鷟	zu[[
+鷟	vo[fn
+鷟	zu[fn
 鷠	yu[[
 鷡	wu[[
 鷢	jt[[
@@ -32218,7 +32220,7 @@ use_preset_vocabulary: true
 鷪	yk[[
 鷫	su[sn
 鷬	hl[[
-鷭	fj[[
+鷭	fj[pn
 鷮	jn[[
 鷯	ln[dn
 鷰	yj[[
@@ -32236,7 +32238,7 @@ use_preset_vocabulary: true
 鷼	xm[[
 鷽	xt[[
 鷾	yi[[
-鷿	pi[un
+鷿	pi[[
 鸀	uu[[
 鸁	lo[[
 鸂	qi[[
@@ -32261,7 +32263,7 @@ use_preset_vocabulary: true
 鸏	mg[cn
 鸐	di[[
 鸐	vo[[
-鸑	yt[[
+鸑	yt[qn
 鸒	yu[[
 鸓	lw[[
 鸔	bo[[
@@ -32658,8 +32660,8 @@ use_preset_vocabulary: true
 齖	ya[[
 齗	kf[vj
 齗	yb[vj
-齘	jp[[
-齘	xp[[
+齘	jp[vl
+齘	xp[vl
 齙	bc[vs
 齙	pc[vs
 齚	cu[[
@@ -32693,8 +32695,8 @@ use_preset_vocabulary: true
 齬	wu[vk
 齬	yu[vk
 齭	iu[[
-齮	qi[[
-齮	yi[[
+齮	qi[vk
+齮	yi[vk
 齯	ni[ve
 齰	co[[
 齰	ze[[
@@ -32713,7 +32715,7 @@ use_preset_vocabulary: true
 齹	co[[
 齺	zz[[
 齻	dm[[
-齼	iu[[
+齼	iu[vr
 齽	jb[[
 齾	ya[[
 齿	ii[vk
@@ -34349,7 +34351,7 @@ use_preset_vocabulary: true
 𡑄	vh[[
 𡑆	ll[[
 𡑈	dv[[
-𡑍	lc[[
+𡑍	lc[tl
 𡑎	xy[[
 𡑘	vi[[
 𡑚	ku[[
@@ -48521,7 +48523,7 @@ use_preset_vocabulary: true
 𫛶	ii[[
 𫛸	ti[[
 
-#Unicode 7.0 	unicode# 7.0 
+#Unicode 7.0 
 璴	iu[[
 鰰	uf[[
 舮	lu[[
@@ -48893,7 +48895,7 @@ use_preset_vocabulary: true
 竍	ui[[
 俧	vi[[
 
-#以下爲詞組	#[vr[ab[dd[yk[sq
+#以下爲詞組
 㓦劃	bo[[ hx[gd
 㔩葉	ee[[ ye[ku
 㕷啦	pa[[ la[kl
@@ -49259,8 +49261,8 @@ use_preset_vocabulary: true
 不忘溝壑	bu[ad wh[wx gz[ds he[lt
 不忘溝壑	bu[ad wh[wx gz[ds ho[lt
 不快樂	bu[ad kk[xg le[pd
-不恁麼	bu[ad nf[[ me[ps
-不恁麼	bu[ad rf[[ me[ps
+不恁麼	bu[ad nf[rx me[ps
+不恁麼	bu[ad rf[rx me[ps
 不愆	bu[ad qm[ix
 不愜氣	bu[ad qp[xj qi[pv
 不成模樣	bu[ad ig[wv mu[md yh[my
@@ -50353,7 +50355,7 @@ use_preset_vocabulary: true
 俛首	fu[[ uz[bz
 俛首帖耳	fu[[ uz[bz tp[jk er[aa
 俛首聽命	fu[[ uz[bz tk[kj mk[re
-俛首自招	fu[[ uz[bz zi[po vc[[
+俛首自招	fu[[ uz[bz zi[po vc[fk
 保俶塔	bc[rm iu[ry ta[tk
 保留地	bc[rm lq[pt di[ty
 保藏	bc[rm ch[ci
@@ -50539,7 +50541,7 @@ use_preset_vocabulary: true
 傍門	ph[rf mf[dv
 傍門外道	ph[rf mf[dv wd[xb dc[zz
 傑克遜	jp[mh ke[ue sy[zx
-傑弗遜	jp[mh fu[[ sy[zx
+傑弗遜	jp[mh fu[vl sy[zx
 傔卒	qm[[ zu[wu
 傔從	qm[[ cs[rr
 傔從	qm[[ zs[rr
@@ -50573,7 +50575,7 @@ use_preset_vocabulary: true
 傴拊	yu[rx fu[fc
 債務重組	vd[rr wu[wl is[pa zu[sq
 債多了不愁	zd[rr do[xx le[vl bu[ad iz[hx
-傷亡枕藉	uh[rl wh[wv vf[mv jp[ro
+傷亡枕藉	uh[rl wh[wv vf[mv jp[co
 傷嗟	uh[rl jp[kg
 傻勁	ua[rw jb[vl
 傻呵呵	ua[rw he[kk he[kk
@@ -50607,7 +50609,7 @@ use_preset_vocabulary: true
 僕從	pu[rb cs[rr
 僕從	pu[rb zs[rr
 僗什子	lc[[ ui[ru zi[va
-僝僽	ij[[ vz[[
+僝僽	ij[rz vz[[
 僥倖	jn[rw xk[tg
 僥傒	jn[rw xi[rd
 僥幸	jn[rw xk[tg
@@ -51057,7 +51059,7 @@ use_preset_vocabulary: true
 出血筒子	iu[vk xt[pm ts[vk zi[va
 出行	iu[vk xk[ii
 出言不遜	iu[vk yj[wk bu[ad xy[zx
-出醜狼藉	iu[vk iz[va lh[ql ji[ro
+出醜狼藉	iu[vk iz[va lh[ql ji[co
 出頭露角	iu[vk tz[dd lz[yk jn[dy
 出頭露面	iu[vk tz[dd lz[yk mm[aa
 函授學校	hj[lk uz[fy xt[xz xn[mx
@@ -51108,7 +51110,7 @@ use_preset_vocabulary: true
 切角	qp[qd jn[dy
 切骨之仇	qp[qd gu[lo vi[dn iz[rj
 刈蓍遺簪	yi[xd ui[co yi[zr zf[vo
-刊薙	kj[gd ti[[
+刊薙	kj[gd ti[cf
 刊行	kj[gd xk[ii
 刑不上大夫	xk[kd bu[ad uh[la dd[un fu[an
 刑事調查	xk[kd ui[al dn[yk ia[md
@@ -51298,7 +51300,7 @@ use_preset_vocabulary: true
 剮刑	gx[kd xk[kd
 副會長	fu[ad hv[rs vh[pn
 副榜	fu[ad bh[mf
-副睪丸	fu[ad gc[pg wj[pd
+副睪丸	fu[ad gc[[ wj[pd
 副角	fu[ad jt[dy
 副議長	fu[ad yi[yy vh[pn
 副車	fu[ad ie[al
@@ -51328,7 +51330,7 @@ use_preset_vocabulary: true
 劈地價來	pi[ud di[ty ga[rl ld[an
 劈着	pi[ud vc[yo
 劉長卿	lq[wd vh[pn qk[pe
-劌目鉥心	gv[ed mu[ka uu[[ xb[dd
+劌目鉥心	gv[ed mu[ka uu[ju xb[dd
 劍合珠還	jm[rd he[rk vu[wv hr[zb
 劍頭一吷	jm[rd tz[dd yi[aa xt[[
 力學篤行	li[vp xt[xz du[vm xk[ii
@@ -52675,7 +52677,7 @@ use_preset_vocabulary: true
 噞喁	yj[[ ys[ky
 噢咻	yu[kd xu[km
 噢咿	yu[kd yi[ky
-噤齘	jb[kx xp[[
+噤齘	jb[kx xp[vl
 器官銀行	qi[kk gr[bk yb[jg hh[ii
 器械	qi[kk xp[mc
 器械體操	qi[kk xp[mc ti[rb cc[fm
@@ -53150,7 +53152,7 @@ use_preset_vocabulary: true
 地老鼠	di[ty lc[lb uu[jv
 地聽	de[ty tk[kj
 地脈	di[ty md[oy
-地脊	di[ty ji[[
+地脊	di[ty ji[do
 地腳	di[ty jn[oe
 地若瓜分	di[ty ro[ck gx[pn ff[bd
 地荒	di[ty hl[cv
@@ -53294,7 +53296,7 @@ use_preset_vocabulary: true
 基督教科學箴言報	ji[qt du[uo jn[lw ke[hu xt[xz vf[vk yj[wk bc[fy
 基調	ji[qt dn[yk
 埻端	vy[[ dr[le
-堀堁	ku[[ ke[[
+堀堁	ku[ti ke[[
 堂堂之陳	th[xt th[xt vi[dn vf[ed
 堂姊妹	th[xt jp[np mw[nw
 堂榜	th[xt bh[mf
@@ -53302,7 +53304,7 @@ use_preset_vocabulary: true
 堆山塞海	dv[tf uj[lk se[bt hd[dm
 堆貯	dv[tf vu[ka
 堋的	pg[to di[bu
-堡砦	bc[rt vd[[
+堡砦	bc[rt vd[vu
 堤壩	di[tr ba[tr
 堤壩	ti[tr ba[tr
 堤封	di[tr fg[tc
@@ -54028,7 +54030,7 @@ use_preset_vocabulary: true
 威盛	ww[xn ug[im
 威重	ww[xn vs[pa
 娖娖	io[[ io[[
-娙娥	xk[[ ee[nw
+娙娥	xk[ng ee[nw
 娛樂	yu[nt le[pd
 娛樂八卦	yu[nt le[pd ba[pn gx[tb
 娛樂圈	yu[nt le[pd qr[kv
@@ -54346,7 +54348,7 @@ use_preset_vocabulary: true
 定省	dk[br xk[uo
 定讞	dk[br yj[yq
 定都	dk[br du[le
-定鼎訏謨	dk[br dk[ov xu[[ mo[yd
+定鼎訏謨	dk[br dk[ov xu[yy mo[yd
 客行	ke[bk xk[ii
 客長	ke[bk vh[pn
 宣傳彈	xr[bg ir[rv dj[gl
@@ -54676,8 +54678,8 @@ use_preset_vocabulary: true
 居住地	ju[uk vu[rv di[ty
 屈強	qu[ui jl[gi
 屈膝投降	qu[ui xi[ou tz[fy xl[el
-屋脊爪	wu[ut ji[[ vc[pn
-屋脊爪	wu[ut ji[[ vx[pn
+屋脊爪	wu[ut ji[do vc[pn
+屋脊爪	wu[ut ji[do vx[pn
 屍山血海	ui[vp uj[lk xp[pm hd[dm
 屍山血海	ui[vp uj[lk xt[pm hd[dm
 屎蚵蜋	ui[um ke[[ lh[[
@@ -54829,7 +54831,7 @@ use_preset_vocabulary: true
 嵒岫	yj[[ xq[ey
 嵫釐	zi[ey li[il
 嵬嶷	ww[eg yi[er
-嵽嵲	dp[[ np[em
+嵽嵲	dp[ej np[em
 嶄新	vj[ej xb[lj
 嶄然	vj[ej rj[ph
 嶄露	vj[ej lu[yk
@@ -55146,7 +55148,7 @@ use_preset_vocabulary: true
 廝撲行	si[ij pu[fb hh[ii
 廝稱	si[ij if[hx
 廝稱	si[ij ig[hx
-廞塞	qb[[ se[bt
+廞塞	qb[gr se[bt
 廟朝	mn[gy ic[uo
 廠長	ih[ap vh[pn
 廢弛	fw[gd ui[gy
@@ -55596,8 +55598,8 @@ use_preset_vocabulary: true
 忍受得了	rf[rx uz[py de[ic ln[vl
 忍辱負重	rf[rx ru[ic fu[dr vs[pa
 忒忒	te[yx te[yx
-忒恁	te[yx nf[[
-忒恁	te[yx rf[[
+忒恁	te[yx nf[rx
+忒恁	te[yx rf[rx
 忒惡	te[yx ee[yx
 忒敬思	te[yx jk[cw si[tx
 忒楞	te[yx lg[mf
@@ -55700,12 +55702,12 @@ use_preset_vocabulary: true
 怫然變色	fu[xf rj[ph bm[wy se[db
 怫異	bw[xf yi[sc
 怫鬱	fu[xf yu[ue
-恁地	nf[[ de[ty
-恁地	rf[[ de[ty
-恁的	nf[[ de[bu
-恁的	rf[[ de[bu
-恁麼	nf[[ me[ps
-恁麼	rf[[ me[ps
+恁地	nf[rx de[ty
+恁地	rf[rx de[ty
+恁的	nf[rx de[bu
+恁的	rf[rx de[bu
+恁麼	nf[rx me[ps
+恁麼	rf[rx me[ps
 恐嚇	ks[gx he[kx
 恐嚇信	ks[gx he[kx xb[rk
 恐嚇性	ks[gx he[kx xk[xu
@@ -55849,8 +55851,8 @@ use_preset_vocabulary: true
 惱聒	nc[xk gx[ek
 想什麼	xl[mx uf[ru me[ps
 想度	xl[mx do[gy
-惹禍招愆	re[cx ho[pn vc[[ qm[ix
-惹罪招愆	re[cx zv[sf vc[[ qm[ix
+惹禍招愆	re[cx ho[pn vc[fk qm[ix
+惹罪招愆	re[cx zv[sf vc[fk qm[ix
 惹草粘花	re[cx cc[cu nm[mk hx[cb
 惻怛	ce[xd da[xd
 惻怛之心	ce[xd da[xd vi[dn xb[dd
@@ -56677,14 +56679,14 @@ use_preset_vocabulary: true
 拚絕	pj[[ jt[sb
 拚老命	pj[[ lc[lb mk[re
 拚鬥	pj[[ dz[du
-招商銀行	vc[[ uh[wk yb[jg hh[ii
-招搖撞騙	vc[[ yc[ff vl[fl pm[mc
-招權納賂	vc[[ qr[my na[sn lu[kk
-招聘	vc[[ pb[ev
-招行	vc[[ hh[ii
-招降	vc[[ xl[el
-招降納叛	vc[[ xl[el na[sn pj[by
-招降納順	vc[[ xl[el na[sn uy[ir
+招商銀行	vc[fk uh[wk yb[jg hh[ii
+招搖撞騙	vc[fk yc[ff vl[fl pm[mc
+招權納賂	vc[fk qr[my na[sn lu[kk
+招聘	vc[fk pb[ev
+招行	vc[fk hh[ii
+招降	vc[fk xl[el
+招降納叛	vc[fk xl[el na[sn pj[by
+招降納順	vc[fk xl[el na[sn uy[ir
 拜天地	bd[uf tm[ad di[ty
 拜手稽首	bd[uf uz[pl qi[ho uz[bz
 拜稽首	bd[uf qi[ho uz[bz
@@ -56805,9 +56807,9 @@ use_preset_vocabulary: true
 捉顫	vo[fr vj[wr
 捋胳膊	lo[fc ge[ok bo[oc
 捋臂將拳	lo[fc bi[uo jl[dc qr[ju
-捋臂揎拳	lo[fc bi[uo xr[[ qr[ju
+捋臂揎拳	lo[fc bi[uo xr[fg qr[ju
 捋虎鬚	le[fc hu[hj xu[pr
-捋袖揎拳	lo[fc xq[py xr[[ qr[ju
+捋袖揎拳	lo[fc xq[py xr[fg qr[ju
 捋采	lv[fc cd[pm
 捎色	uc[fo ud[db
 捏塑	np[ft su[bt
@@ -56982,8 +56984,8 @@ use_preset_vocabulary: true
 揉弦	rz[fm xm[gy
 揉眵抹淚	rz[fm ii[ox mo[fm lw[do
 揉着癢處	rz[fm vc[yo yh[by iu[wb
-揎拳捋袖	xr[[ qr[ju lo[fc xq[py
-揎拳擄袖	xr[[ qr[ju lo[fl xq[py
+揎拳捋袖	xr[fg qr[ju lo[fc xq[py
+揎拳擄袖	xr[fg qr[ju lo[fl xq[py
 提不起勁	ti[fr bu[ad qi[tj jb[vl
 提傀儡上戲場	ti[fr kv[rg lw[rt uh[la xi[yg ih[tp
 提前還貸	ti[fr qm[bd hr[zb dd[rr
@@ -57008,7 +57010,7 @@ use_preset_vocabulary: true
 揖揖	ji[fe ji[fe
 揚州彈詞	yh[fp vz[dl tj[gl ci[yk
 揚己露才	yh[fp ji[vv lu[yk cd[ap
-揚幡招魂	yh[fp fj[jt vc[[ hy[eg
+揚幡招魂	yh[fp fj[jt vc[fk hy[eg
 揚幡擂鼓	yh[fp fj[jt lw[ft gu[uy
 揚湯止沸	yh[fp th[dp vi[la fw[df
 揚眉抵掌	yh[fp mw[vo vi[fd vh[xu
@@ -57307,7 +57309,7 @@ use_preset_vocabulary: true
 擄人勒贖罪	lu[fl rf[pn le[gl uu[kd zv[sf
 擄嘴	lu[fl zv[ky
 擄掠	lu[fl lt[fx
-擄袖揎拳	lu[fl xq[py xr[[ qr[ju
+擄袖揎拳	lu[fl xq[py xr[fg qr[ju
 擅長	uj[fd ih[pn
 擇不開	vd[fl bu[ad kd[ac
 擇刺	vd[fl ci[ad
@@ -57346,8 +57348,8 @@ use_preset_vocabulary: true
 擘開	bo[uu kd[ac
 據牀指麾	ju[fk il[gm vi[fo hv[gm
 擠陷	ji[fl xm[ej
-擡行市	td[fk hh[ii ui[wj
-擡頦	td[fk hd[wr
+擡行市	td[[ hh[ii ui[wj
+擡頦	td[[ hd[wr
 擦弦樂器	ca[fx xm[gy yt[pd qi[kk
 擦拳抹掌	ca[fx qr[ju mo[fm vh[xu
 擦撞	ca[fx vl[fl
@@ -57362,7 +57364,7 @@ use_preset_vocabulary: true
 擲地作金石聲	vi[fe di[ty zo[rv jb[ra ui[ak ug[up
 擲地有聲	vi[fe di[ty yz[uo ug[up
 擲彈筒	vi[fe dj[gl ts[vk
-擲筊	vi[fe jn[[
+擲筊	vi[fe jn[vx
 擲色	vi[fe ud[db
 擲還	vi[fe hr[zb
 擲骰子	vi[fe tz[gy zi[va
@@ -58436,7 +58438,7 @@ use_preset_vocabulary: true
 杯水車薪	bw[mb uv[ln ie[al xb[cj
 杯水車薪	bw[mb uv[ln ju[al xb[cj
 杯盤狼藉	bw[mb pj[vm lh[ql ji[co
-杯筊	bw[mb jn[[
+杯筊	bw[mb jn[vx
 杯蛇鬼車	bw[mb ue[ib gv[ps ie[al
 杯蛇鬼車	bw[mb ue[ib gv[ps ju[al
 杯行	bw[mb xk[ii
@@ -58742,7 +58744,7 @@ use_preset_vocabulary: true
 梏十指	gu[mk ui[al vi[fo
 梏慘	gu[mk cj[xp
 梗塞	gg[mg se[bt
-梜提	jx[[ ti[fr
+梜提	jx[mj ti[fr
 梟騎	xn[pm ji[mk
 梧棲	wu[mk qi[mx
 梨園行	li[hm yr[ke hh[ii
@@ -59534,7 +59536,7 @@ use_preset_vocabulary: true
 永樂宮	ys[dn le[pd gs[bk
 永樂窯	ys[dn le[pd yc[bf
 永樂錢	ys[dn le[pd qm[jj
-永矢弗諼	ys[dn ui[pt fu[[ xr[yy
+永矢弗諼	ys[dn ui[pt fu[vl xr[yy
 氿泉	gv[dj qr[bu
 汀州	tk[dd vz[dl
 汀曲	tk[dd qu[la
@@ -61078,7 +61080,7 @@ use_preset_vocabulary: true
 狎昵	xx[qj ni[ob
 狎暱	xx[qj ni[[
 狎玩	xx[qj wj[we
-狎翫	xx[qj wj[[
+狎翫	xx[qj wj[we
 狎褻	xx[qj xp[wy
 狎語	xx[qj yu[yk
 狎遊	xx[qj yz[dz
@@ -61395,8 +61397,8 @@ use_preset_vocabulary: true
 環伺	hr[wb si[rk
 環境地質學	hr[wb jk[te di[ty vi[pr xt[xz
 環行	hr[wb xk[ii
-璿圖	xr[[ tu[kd
-璿璣	xr[[ ji[wj
+璿圖	xr[wr tu[kd
+璿璣	xr[wr ji[wj
 瓊漿玉液	qs[wx jl[du yu[wd ye[dn
 瓊漿金液	qs[wx jl[du jb[ra ye[dn
 瓊葩	qs[wx pa[cb
@@ -62081,7 +62083,7 @@ use_preset_vocabulary: true
 相輔而行	xl[mo fu[if er[al xk[ii
 相須而行	xl[mo xu[pr er[al xk[ii
 相驚伯有	xl[mo jk[xx bo[rb yz[uo
-盻盻	xi[[ xi[[
+盻盻	xi[ov xi[ov
 省事	ug[uo ui[al
 省事	xk[uo ui[al
 省俗觀風	xk[uo su[rk gr[ye fg[jx
@@ -62255,8 +62257,8 @@ use_preset_vocabulary: true
 督率	du[uo uk[wu
 督緝	du[uo ji[se
 督緝	du[uo qi[se
-睪丸	gc[pg wj[pd
-睪丸未降症	gc[pg wj[pd ww[an jl[el vg[bv
+睪丸	gc[[ wj[pd
+睪丸未降症	gc[[ wj[pd ww[an jl[el vg[bv
 睹微知著	du[oo ww[iw vi[uk vu[co
 睽孤	kv[ot gu[zg
 睽異	kv[ot yi[sc
@@ -62856,7 +62858,7 @@ use_preset_vocabulary: true
 等邊三角形	dg[vc bm[zl sj[ae jn[dy xk[kp
 等長	dg[vc ih[pn
 等高線地形圖	dg[vc gc[wk xm[sj di[ty xk[kp tu[kd
-筊杯	jn[[ bw[mb
+筊杯	jn[vx bw[mb
 筍乾	sy[vy gj[au
 筍脯	sy[vy fu[of
 筍虡	sy[vy ju[[
@@ -63021,7 +63023,7 @@ use_preset_vocabulary: true
 紀傳	ji[sj vr[rv
 紀傳體	ji[sj vr[rv ti[rb
 紀行	ji[sj xk[ii
-紃屨	xy[[ ju[un
+紃屨	xy[si ju[un
 約從	yt[su zs[rr
 約旦哈什米王國	yt[su dj[oa ha[kk ue[ru mi[dm wh[at go[ky
 約翰·克利斯多夫	yt[su hj[ux ke[ue li[hd si[qj do[xx fu[an
@@ -63212,7 +63214,7 @@ use_preset_vocabulary: true
 綜合銀行	zs[sx he[rk yb[jg hh[ii
 綜括	zs[sx gx[fk
 綜括	zs[sx ko[fk
-綝纚	lb[[ ui[[
+綝纚	lb[sm ui[[
 綠地	lv[su di[ty
 綠耳	lu[su er[aa
 綠色行銷	lv[su se[db xk[ii xn[jo
@@ -63407,9 +63409,9 @@ use_preset_vocabulary: true
 繆種流傳	mq[sp vs[hv lq[dv ir[rv
 繆篆	mz[sp vr[vu
 繇繇	yc[px yc[px
-繐帳	sv[hx vh[ji
-繐帷	sv[hx ww[jf
-繐裳	sv[hx ih[xy
+繐帳	sv[[ vh[ji
+繐帷	sv[[ ww[jf
+繐裳	sv[[ ih[xy
 織田信長	vi[sb tm[ku xb[rk ih[pn
 繞行	rc[sw xk[ii
 繡閣長春	xq[sn ge[mk ih[pn iy[fo
@@ -64069,7 +64071,7 @@ use_preset_vocabulary: true
 自了	zi[po ln[vl
 自傳	zi[po vr[rv
 自傳體	zi[po vr[rv ti[rb
-自僝自僽	zi[po ij[[ zi[po vz[[
+自僝自僽	zi[po ij[rz zi[po vz[[
 自助旅行	zi[po vu[ql lv[fn xk[ii
 自動運行	zi[po ds[el yy[zs xk[ii
 自古紅顏多薄命	zi[po gu[uk hs[sg yj[ir do[xx bo[cc mk[re
@@ -64407,7 +64409,7 @@ use_preset_vocabulary: true
 草紇繨	cc[cu ge[sq da[[
 草芥	cc[cu jp[cl
 草草了事	cc[cu cc[cu ln[vl ui[al
-草薙禽獮	cc[cu ti[[ qb[rd xm[qx
+草薙禽獮	cc[cu ti[cf qb[rd xm[qx
 草行露宿	cc[cu xk[ii lu[yk su[bb
 草長鶯飛	cc[cu vh[pn yk[cn fw[vd
 草靡風行	cc[cu mi[gf fg[jx xk[ii
@@ -64848,8 +64850,8 @@ use_preset_vocabulary: true
 薈萃一堂	hv[cs cv[cu yi[aa th[xt
 薈蔚	hv[cs ww[cc
 薔薇露	ql[ck ww[cw lu[yk
-薙髮	ti[[ fa[vd
-薙髮令	ti[[ fa[vd lk[rs
+薙髮	ti[cf fa[vd
+薙髮令	ti[cf fa[vd lk[rs
 薜羅	bi[cu lo[sx
 薜荔	bi[cu li[cl
 薢茩	xp[cn gz[[
@@ -64875,7 +64877,7 @@ use_preset_vocabulary: true
 藉端	jp[ro dr[le
 藉箸代籌	jp[ro vu[vo dd[ry iz[vc
 藉草枕塊	jp[ro cc[cu vf[mv kk[tg
-藉藉	ji[ro ji[ro
+藉藉	ji[co ji[co
 藉詞	jp[ro ci[yk
 藋粱	di[[ ll[dm
 藍調	lj[cm dn[yk
@@ -65027,7 +65029,7 @@ use_preset_vocabulary: true
 號角	hc[kv jn[dy
 虧心短行	kv[ev xb[dd dr[ua xk[ii
 虯蟠	qq[iv pj[it
-虯鏤亮槅	qq[iv lz[jn ll[wj ge[[
+虯鏤亮槅	qq[iv lz[jn ll[wj ge[ml
 虯髯	qq[iv rj[ar
 虯髯客	qq[iv rj[ar ke[bk
 虯髯客傳	qq[iv rj[ar ke[bk vr[rv
@@ -65099,7 +65101,7 @@ use_preset_vocabulary: true
 蜷蜿	qr[iv wj[iv
 蜼彝	lw[[ yi[vc
 蜿蟺	wj[iv uj[[
-蝃蝀	di[[ ds[[
+蝃蝀	di[[ ds[id
 蝍蛆	ji[[ ju[iq
 蝍蛆鉗帶	ji[[ ju[iq qm[jg dd[fj
 蝎蝎螫螫	he[iv he[iv ve[ti ve[ti
@@ -65738,7 +65740,7 @@ use_preset_vocabulary: true
 裴萊吉伍斯二世	pw[fy ld[cl ji[uk wu[rw si[qj er[aa ui[av
 裴行儉	pw[fy xk[ii jm[ra
 裴迪	pw[fy di[zy
-裴頠	pw[fy ww[[
+裴頠	pw[fy ww[dr
 裴駰	pw[fy yb[md
 裴高累西	pw[fy gc[wk lw[tx xi[aa
 裸露	lo[pg lu[yk
@@ -65967,7 +65969,7 @@ use_preset_vocabulary: true
 角平分線	jn[dy pk[au ff[bd xm[sj
 角度	jn[dy du[gy
 角度看	jn[dy du[gy kj[uo
-角招	jt[dy uc[[
+角招	jt[dy uc[fk
 角枕	jt[dy vf[mv
 角柱	jn[dy vu[mv
 角樓	jn[dy lz[mn
@@ -66062,8 +66064,8 @@ use_preset_vocabulary: true
 計行慮義	ji[yu xk[ii lv[hx yi[dx
 討便宜	tc[yc pm[rg yi[bq
 討價還價	tc[yc jx[rl hr[zb jx[rl
-訏訏	xu[[ xu[[
-訏謨	xu[[ mo[yd
+訏訏	xu[yy xu[yy
+訏謨	xu[yy mo[yd
 訐告	jp[yg gc[nk
 訐揚	jp[yg yh[fp
 訐發	jp[yg fa[vd
@@ -66390,7 +66392,7 @@ use_preset_vocabulary: true
 請給	qk[yo ji[sk
 請自行	qk[yo zi[po xk[ii
 諒陰	ll[yx an[eo
-諓諓	jm[[ jm[[
+諓諓	jm[yj jm[yj
 諔詭	iu[[ gv[yv
 諕人	xx[[ rf[pn
 諕嚇	xx[[ xx[kx
@@ -67238,8 +67240,8 @@ use_preset_vocabulary: true
 輪調	ly[ib dn[yk
 輪軸	ly[ib vz[iy
 輪鎗拽步	ly[ib ql[[ ye[fy bu[vp
-輶車	yz[[ ie[al
-輶軒	yz[[ xr[ig
+輶車	yz[iy ie[al
+輶軒	yz[iy xr[ig
 輸出功率	uu[id iu[vk gs[gl lv[wu
 輸液	uu[id ye[dn
 輸着	uu[id vc[yo
@@ -68400,7 +68402,7 @@ use_preset_vocabulary: true
 錄取率	lu[eu qu[ey lv[wu
 錄鬼簿	lu[eu gv[ps bu[vc
 錆色	ql[jo se[db
-錞于	iy[[ yu[al
+錞于	iy[jz yu[al
 錢不露白	qm[jj bu[ad lz[yk bd[po
 錦絃	jb[jj xm[gy
 錦綸	jb[jj ly[sb
@@ -68946,7 +68948,7 @@ use_preset_vocabulary: true
 閼與	yu[md yu[aa
 閼逢	ee[md fg[zf
 闇莫	an[oo mu[cd
-闉闍	yb[[ du[mo
+闉闍	yb[mt du[mo
 闍黎	ue[mo li[hu
 闐咽	tm[mb ye[kd
 闐溢	tm[mb yi[dm
@@ -69272,7 +69274,7 @@ use_preset_vocabulary: true
 隱括	yb[ex gx[fk
 隱括	yb[ex ko[fk
 隱沒	yb[ex mo[dy
-隱睪症	yb[ex gc[pg vg[bv
+隱睪症	yb[ex gc[[ vg[bv
 隱祕	yb[ex mi[hb
 隱藏	yb[ex ch[ci
 隱血	yb[ex xp[pm
@@ -69432,7 +69434,7 @@ use_preset_vocabulary: true
 霉乾菜	mw[ym gj[au cd[cm
 霍地	ho[yf di[ty
 霍小玉傳	ho[yf xn[ld yu[wd vr[rv
-霑裳	vj[[ ih[xy
+霑裳	vj[dk ih[xy
 霓裳	ni[ye ih[xy
 霓裳羽衣	ni[ye ih[xy yu[xx yi[wy
 霓裳羽衣曲	ni[ye ih[xy yu[xx yi[wy qu[la
@@ -69485,7 +69487,7 @@ use_preset_vocabulary: true
 露眼	lz[yk yj[og
 露空	lz[yk ks[bg
 露章	lu[yk vh[lu
-露脊鯨	lu[yk ji[[ jk[ax
+露脊鯨	lu[yk ji[do jk[ax
 露膽披肝	lu[yk dj[od pi[fy gj[og
 露臉	lz[yk lm[oa
 露臺	lu[yk td[sk
@@ -69760,7 +69762,7 @@ use_preset_vocabulary: true
 顢頇	mj[cr hj[gr
 顧不了	gu[ir bu[ad ln[vl
 顧慮重重	gu[ir lv[hx is[pa is[pa
-顧盻	gu[ir xi[[
+顧盻	gu[ir xi[ov
 顧藉	gu[ir jp[ro
 顫巍巍	ij[wr ww[eg ww[eg
 顫悠	ij[wr yz[rx
@@ -70043,7 +70045,7 @@ use_preset_vocabulary: true
 駢拇枝指	pm[mk mu[fm qi[my vi[fo
 駢枝	pm[mk qi[my
 駢闐	pm[mk tm[mb
-駪駪	uf[[ uf[[
+駪駪	uf[me uf[me
 騁兇騁勢	ig[mv xs[xk ig[mv ui[fl
 騁強背理	ig[mv ql[gi bw[lo li[wl
 騁懷	ig[mv hk[xb
@@ -70413,7 +70415,7 @@ use_preset_vocabulary: true
 鷺翿	lu[zn dc[[
 鸂鶒	xi[[ ii[[
 鸐雉	di[[ vi[uf
-鸑鷟	yt[[ vo[[
+鸑鷟	yt[qn vo[fn
 鸕鶿	lu[ln ci[bn
 鸞停鵠峙	lr[wn tk[rd hu[nn vi[ec
 鸞飄鳳泊	lr[wn pn[xx fg[jy bo[db
@@ -70430,7 +70432,7 @@ use_preset_vocabulary: true
 鹽鹼地	yj[tm jm[uk di[ty
 鹿柴	lu[gb vd[vm
 鹿死誰手	lu[gb si[db uv[yf uz[pl
-鹿砦	lu[gb vd[[
+鹿砦	lu[gb vd[vu
 鹿脯	lu[gb fu[of
 鹿角	lu[gb jn[dy
 鹿角畫	lu[gb jn[dy hx[ak
@@ -70635,7 +70637,7 @@ use_preset_vocabulary: true
 齦溝	yb[vg gz[ds
 齦齶	yb[vg ee[ok
 齧蘗吞針	np[kk bo[[ ty[tk vf[ju
-齮齕	yi[[ he[vq
+齮齕	yi[vk he[vq
 齰舌	ze[[ ue[qk
 齲齒	qu[vy ii[vk
 齲齒笑	qu[vy ii[vk xn[vy
@@ -70677,4 +70679,3 @@ use_preset_vocabulary: true
 𣝓絲	yj[[ si[va
 𣶐飯	pc[[ fj[uy
 𧑗蝦	nk[[ xx[ix
-
