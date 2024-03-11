@@ -172,14 +172,19 @@ flypy2mspy:
     - xform/( [nl])v/$1Y/ # 小鹤双拼的V键的v匹配到微软双拼的Y键
     - xlit/ZPXLYDLBWKOCNY/zpxlydlbwkocny/
 
+    - xform/^aa/oa/
     - xform/^ai/ol/
     - xform/^an/oj/
     - xform/^ah/oh/
     - xform/^ao/ok/
+    - xform/^ee/oe/
     - xform/^ei/oz/
     - xform/^en/of/
+    - xform/^eg/og/
     - xform/^er/or/
+    # - xform/^oo/oo/
     - xform/^ou/ob/
+    
     - xform/^ //
   reverse_lookup/prism: chaizi_fp2mspy
   translator/prism: mspy_zrmfast
@@ -201,13 +206,17 @@ flypy2mspy:
     - derive/^([nl])v/$1Y/
     - xlit/ZPXLYDLBWKOCNY/zpxlydlbwkocny/
 
+    - derive/^aa/oa/
     - derive/^ai/ol/
     - derive/^an/oj/
     - derive/^ah/oh/
     - derive/^ao/ok/
+    - derive/^ee/oe/
     - derive/^ei/oz/
     - derive/^en/of/
+    - derive/^eg/og/
     - derive/^er/or/
+    # - derive/^oo/oo/ # the same
     - derive/^ou/ob/
 
     - derive/^(..).+$/$1/
