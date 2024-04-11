@@ -82,7 +82,7 @@ def get_pinyin_fn(schema: str):
 
 
 def get_shape_dict(schema: str):
-    with open(f"{schema}.txt", newline="") as f:
+    with open(f"{schema}.txt", newline="", encoding='UTF-8') as f:
         rows = list(csv.reader(f, delimiter="\t", quotechar="`"))
     shape_dict = {row[0]: row[1] for row in rows if len(row) >= 2}
     return shape_dict
@@ -96,7 +96,7 @@ def rewrite_row(row: list, code_fn: callable):
     # row == ['三觭龍', 'san ji long'] or ['三觭龍', 'san ji long', '1']
     zh_chars = row[0]
     # eg. '安娜·卡列尼娜' -> '安娜卡列尼娜'
-    zh_chars = re.sub("[;·，。；：“”‘’《》（）！？、…—]", "", zh_chars)
+    zh_chars = re.sub("[;·，。；：“”‘’《》（）！？、…—–]", "", zh_chars)
     zh_chars = opencc_t2s.convert(zh_chars)  # '三觭龍' -> '三觭龙'
     pinyin_list = row[1].split()  # ['san', 'ji', 'long']
     if len(zh_chars) != len(pinyin_list):  # failure case
@@ -132,7 +132,7 @@ def main():
     pinyin_fn = get_pinyin_fn(args.pinyin)
     shape_dict = get_shape_dict(args.shape)
     delim = args.delimiter
-    with open(args.input_file, newline="") as f:
+    with open(args.input_file, newline="", encoding='UTF-8') as f:
         rows = list(csv.reader(f, delimiter="\t", quotechar="`"))
 
     def code_fn(pinyin, hanzi):
@@ -145,7 +145,7 @@ def main():
     if output_file == "":
         _, input_postfix = args.input_file.split(".", maxsplit=1)
         output_file = f"{args.pinyin}_{args.shape}.{input_postfix}"
-    with open(output_file, "w", newline="") as f:
+    with open(output_file, "w", newline="", encoding='UTF-8') as f:
         my_tsv = csv.writer(f, delimiter="\t",
                             quotechar="`", lineterminator="\n")
         my_tsv.writerows(out_rows)
