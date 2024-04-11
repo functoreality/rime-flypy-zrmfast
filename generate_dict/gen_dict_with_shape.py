@@ -96,7 +96,7 @@ def rewrite_row(row: list, code_fn: callable):
     # row == ['三觭龍', 'san ji long'] or ['三觭龍', 'san ji long', '1']
     zh_chars = row[0]
     # eg. '安娜·卡列尼娜' -> '安娜卡列尼娜'
-    zh_chars = re.sub("[;·，。；：“”‘’《》（）！？、…—]", "", zh_chars)
+    zh_chars = re.sub("[;·，。；：“”‘’《》（）！？、…—–]", "", zh_chars)
     zh_chars = opencc_t2s.convert(zh_chars)  # '三觭龍' -> '三觭龙'
     pinyin_list = row[1].split()  # ['san', 'ji', 'long']
     if len(zh_chars) != len(pinyin_list):  # failure case
