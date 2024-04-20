@@ -7,12 +7,13 @@ Convert quanpin dictionary files to pinyin+shape for Rime input method.
 import csv
 import re
 import argparse
+from typing import List, Callable, Dict
 import opencc
 
 opencc_t2s = opencc.OpenCC('t2s.json')
 
 
-def lunapy2flypy(pinyin: str):
+def lunapy2flypy(pinyin: str) -> str:
     r""" 全拼拼音转为小鹤双拼码, 如果转自然码等请自行替换双拼映射
     adapted from: https://github.com/boomker/rime-flypy-xhfast/blob/15664c597644bd41410ec4595cece88a6452a1bf/scripts/flypy_dict_generator_new.py
     """
@@ -69,7 +70,7 @@ def lunapy2flypy(pinyin: str):
     return shengmu + yunmu_dict.get(yunmu, yunmu)
 
 
-def get_pinyin_fn(schema: str):
+def get_pinyin_fn(schema: str) -> Callable[[str], str]:
     schema = schema.lower()
     if schema in "quanpin lunapy luna_pinyin none".split():
         def do_nothing(pinyin: str):
@@ -81,14 +82,14 @@ def get_pinyin_fn(schema: str):
         raise NotImplementedError("Pinyin schema 'zrm' not implemented.")
 
 
-def get_shape_dict(schema: str):
+def get_shape_dict(schema: str) -> Dict[str, str]:
     with open(f"{schema}.txt", newline="", encoding='UTF-8') as f:
         rows = list(csv.reader(f, delimiter="\t", quotechar="`"))
     shape_dict = {row[0]: row[1] for row in rows if len(row) >= 2}
     return shape_dict
 
 
-def rewrite_row(row: list, code_fn: callable):
+def rewrite_row(row: List[str], code_fn: Callable[[str, str], str]) -> List[str]:
     if len(row) < 2 or row[0][0] == "#":
         return row
     if len(row) == 2 and row[1][0].isnumeric():  # ['三觭龍', '1']
@@ -109,7 +110,7 @@ def rewrite_row(row: list, code_fn: callable):
     return row
 
 
-def get_cli_args():
+def get_cli_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input_file", "-i", type=str,
                         default="luna_pinyin.dict.yaml",
@@ -127,7 +128,7 @@ def get_cli_args():
     return args
 
 
-def main():
+def main() -> None:
     args = get_cli_args()
     pinyin_fn = get_pinyin_fn(args.pinyin)
     shape_dict = get_shape_dict(args.shape)

@@ -15,3 +15,12 @@ python3 gen_dict_with_shape.py -i ext.dict.yaml -x zrmfast
 python3 gen_dict_with_shape.py -h
 ```
 PS：针对小鹤原版辅助码，还有另一位用户也实现了一份 [Python 转换程序](https://github.com/boomker/rime-flypy-xhfast/blob/15664c597644bd41410ec4595cece88a6452a1bf/scripts/flypy_dict_generator_new.py)，需要配合相应的 [小鹤原版辅助码文件](https://github.com/boomker/rime-flypy-xhfast/blob/15664c597644bd41410ec4595cece88a6452a1bf/scripts/xhxm_map.py)。
+
+## 拆字字典生成
+运行如下命令生成简体拆字字典：
+```shell
+python3 gen_chaizi_dict.py -i chaizi.txt
+```
+将参数 `chaizi.txt` 改成 `chaizi_tr.txt` 则可生成繁体拆字字典。
+
+拆字方案原始文件 `chaizi.txt`，`chaizi_tr.txt` 通过脚本 `preprocess_chaizi_dict.py` 生成。
