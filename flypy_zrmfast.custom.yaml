@@ -13,6 +13,8 @@ patch:
       ## `键（grave，Tab 上面那个）为词组逐字追加辅助码。
       ## 可将 grave 改成 Tab，Control+Tab，bracketright（] 键）。
 
+  #speller/algebra/@next: derive/^(..[[]).+$/$1/ ## 取消注释后：无视多余的引导符 [
+
   ##  直接引导辅助码（改用自然码等其他双拼方案的用户请在 pinyin_switch.yaml 中设置）
   ##  如果希望无论有无 [ 均可引导，取消注释的同时将 xform 改成 derive
   #speller/algebra/@next: xform/[[]//

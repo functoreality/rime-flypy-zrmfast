@@ -72,7 +72,7 @@ speller:
   ## speller 未允许 aj 表示 an
   algebra:
     - derive/^(..).+$/$1/
-    - derive/^(..[[]).+$/$1/
+    #- derive/^(..[[]).+$/$1/ ## 取消注释后：无视多余的引导符 [
     - derive/^(..[[].).+$/$1/
     - derive/^([jqxy])u/$1v/
     #- xform/[[]// ## 取消注释后：直接引导辅助码
