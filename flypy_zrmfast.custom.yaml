@@ -52,6 +52,28 @@ patch:
   ##  如果这两个文件都没有，可以仿照本文件格式自行新建其中一个并添加内容，
   ##  新文件第一行为 patch: （开头无空格），第二行为上面所说的行（开头两空格）。
 
+  ##  汉字候选区推荐表情符号：按如下几步操作
+  ##  1. 下载雾凇拼音配置文件 https://github.com/iDvel/rime-ice 。
+  ##  2. 将其中提供的 opencc 文件夹复制到 Rime 的用户目录下
+  ##  （如果已经有 opencc 文件夹，则将里面的文件复制过来即可）。
+  ##  3. 取消下面几行的注释：
+  #switches/@next:
+  #  name: opencc_emoji
+  #  states: [ 💀, 😄 ]
+  #  reset: 1
+  #engine/filters:
+  #  - simplifier
+  #  - simplifier@opencc_emoji
+  #  - uniquifier
+  #opencc_emoji:
+  #  opencc_config: emoji.json
+  #  option_name: opencc_emoji
+  ##  4. 重新部署后即可使用。若有异常，可尝试按 5 所述的方式能否开启。
+  ##  5. 若希望关闭这些推荐，无需重新修改这部分配置文件，只需切换相应的输入法选
+  ##  项即可。通常情况下只需按 Ctrl+` （主键盘 1 左侧的按键），再按 2，找到
+  ##  😄→💀 选项（可能需要翻页）选中即可。重新开启的方式与之类似。
+  ##  6. 若用户希望添加新的表情、符号，可自行编辑 opencc/ 目录下的 txt 文件。
+
   ##  用户词典记录为文本格式（默认为二进制）。如果发现重启/部署/同步之后经常
   ##  忘掉之前输入的词（例如 Linux ibus-rime.appimage 的用户），可以尝试开启。
   #translator/db_class: tabledb
