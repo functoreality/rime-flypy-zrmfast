@@ -26,6 +26,9 @@ Rime 输入法配置文件，小鹤双拼（也可设置为用自然码/微软�
 	* 默认的用户目录：`%APPDATA%\Rime`（Windows），`~/Library/Rime`（MacOS)，`~/.config/ibus/rime`（Linux；根据前端类型，可能需要将 ibus 改成 fcitx 或 fcitx5），`/sdcard/rime`（Android）。
 	* 如果某些同名文件已经存在，可以参考下方的 [文件说明](#文件说明)。
 	* 如果 Rime 老用户之前已有较多配置文件，希望在不混淆各类配置的同时试用本项目的完整功能（毕竟本项目文件较多），也可以考虑备份/重命名原来的用户目录，将本项目单独放在新建的用户目录下部署。
+* 对于 Android Trime 用户，用户目录下除了本项目的文件以外，可能还需要补充这些文件：
+	1. Trime 安装后用户目录下自带的 `trime.yaml`, `tongwenfeng.trime.yaml` 配置文件；
+	2. 电脑版 Rime 安装目录中（可能需要进入某些子文件夹，比如 Windows 系统在 `data/` 文件夹里）的所有 YAML 文件，比如朙月拼音的方案文件（`luna_pinyin.schema.yaml`）和字典文件（`luna_pinyin.dict.yaml`）。
 * 一些设置项需要通过修改文件内容实现。Windows（尤其是 7 及以下的版本）自带的记事本可能无法胜任 YAML 文件的编辑任务，推荐使用 VS Code，Sublime Text 等通用代码编辑器。其他桌面系统的默认文本编辑器原则上都可用。
 	* 没有也不想安装代码编辑器的用户可以考虑使用 [在线 YAML 编辑器](https://codebeautify.org/yaml-editor-online)。
 	* 此外，所有配置文件都应以 UTF-8 编码保存，YAML 文件还需要保持严格的缩进（只能用空格，不能用 Tab 符号）。
@@ -124,8 +127,7 @@ Rime 输入法配置文件，小鹤双拼（也可设置为用自然码/微软�
 
 ### 关于 Lua 支持
 * 小狼毫（Windows）和鼠须管（MacOS）的最新版本应该都支持 Lua 。
-* Trime（Android）的最新版本已支持 Lua，直接在 [GitHub 页面](https://github.com/osfans/trime) 下载版本即可。
-	另外，Trime 自带的配置文件可能有缺失，此时可以考虑将电脑版 Rime 系统目录里的配置文件也复制到 Trime 的配置目录中，比如朙月拼音的方案文件和字典文件。
+* Trime（Android）的最新版本已支持 Lua，直接在 [GitHub 页面](https://github.com/osfans/trime) 下载并安装即可。
 * 对于中州韵（Linux），据说 Arch Linux 源提供的 fcitx5-rime 可以在插件设置里开启 Lua 支持。
 	* 其他发行版的用户可以考虑这个 [ibus-rime AppImage](https://github.com/hchunhui/build)。遇到调频失效等问题可以试着删除各 userdb、build、sync 文件夹重新部署/同步。如果这一问题反复出现，或者重启/部署/同步之后经常忘掉之前输入的词，可以尝试在 `flypy_zrmfast.custom.yaml` 里开启“用户词典记录为文本格式”，或者看这个 AppImage 有没有发布新版本。
 	* （更新）已有用户提出 flatpak 版本的 fcitx5-rime 已支持 Lua，具体可见 [这个 issue](https://github.com/functoreality/rime-flypy-zrmfast/issues/26)。
