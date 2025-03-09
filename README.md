@@ -22,6 +22,7 @@ Rime 输入法配置文件，小鹤双拼（也可设置为用自然码/微软�
 	* 若需要专门查某个字的输入码，可以直接在字典文件里搜索，或者利用下方“附加功能”里的 `ab` 前缀。
 
 ## 安装与配置方式
+* 先下载本仓库的文件。对于不会使用 Git 的用户，可以点击 [这个链接](https://github.com/functoreality/rime-flypy-zrmfast/archive/refs/heads/master.zip) 或者 [镜像版链接](https://bgithub.xyz/functoreality/rime-flypy-zrmfast/archive/refs/heads/master.zip) 下载，并解压得到的 zip 文件。
 * 将这些文件放入 Rime 的用户目录下，重新部署（右键点击任务栏的 Rime 图标可见）即可。
 	* 默认的用户目录：`%APPDATA%\Rime`（Windows），`~/Library/Rime`（MacOS)，`~/.config/ibus/rime`（Linux；根据前端类型，可能需要将 ibus 改成 fcitx 或 fcitx5），`/sdcard/rime`（Android）。
 	* 如果某些同名文件已经存在，可以参考下方的 [文件说明](#文件说明)。
