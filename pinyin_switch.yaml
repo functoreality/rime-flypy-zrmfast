@@ -1,8 +1,9 @@
 ##  全拼加辅助码方案请关注这里：
 flypy2quanpin:
   translator:
-    dictionary: flypy_zrmfast ## 若希望用小鹤形码，则注释掉这一行
+    dictionary: flypy_zrmfast ## 默认自然快手形码；若希望用其他形码，则注释掉这一行
     #dictionary: flypy_flypy ## 若希望用小鹤形码，则取消这一行的注释
+    #dictionary: flypy_zrm ## 若希望用自然码原版形码，则取消这一行的注释
     spelling_hints: 1
     prism: lunapy_zrmfast
   speller:

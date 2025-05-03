@@ -121,7 +121,8 @@ def get_cli_args() -> argparse.Namespace:
                         choices=["flypy", "quanpin", "zrm"],
                         help="pinyin schema")
     parser.add_argument("--shape", "-x", type=str, default="zrmfast",
-                        choices=["flypy", "zrmfast"], help="shape schema")
+                        choices=["flypy", "zrmfast", "zrm"],
+                        help="shape schema")
     parser.add_argument("--delimiter", "-d", type=str, default="[",
                         help="delimiter to seperate pinyin and shape")
     args = parser.parse_args()
