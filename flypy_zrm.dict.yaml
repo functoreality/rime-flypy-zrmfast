@@ -5,7 +5,7 @@
 # https://github.com/rimeinn/rime-moran/blob/main/moran.chars.dict.yaml
 # 码表生成方式见 generate_dict/ ，可使用同样的方式转换其他基于全拼的扩充词库。
 ---
-name: luna_pinyin
+name: flypy_zrm
 version: "2020.02.08"
 sort: by_weight
 use_preset_vocabulary: true
