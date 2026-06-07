@@ -130,10 +130,18 @@ Rime 输入法配置文件，小鹤双拼（也可设置为用自然码/微软�
 ### 关于 Lua 支持
 * 小狼毫（Windows）和鼠须管（MacOS）的最新版本应该都支持 Lua 。
 * Trime（Android）的最新版本已支持 Lua，直接在 [GitHub 页面](https://github.com/osfans/trime) 下载并安装即可。
+* 对于中州韵（Linux）：
+	* 最新版 Ubuntu（已验证 25.10）上通过 apt 安装的 `ibus-rime` 或 `fcitx5-rime` 通常已支持 Lua。如未支持，尝试手动自动安装 `librime-plugin-lua`
+	* Fedora 用户可手动安装 `librime-lua`
+	* flatpak 版本的 `fcitx5-rime` 已支持 Lua，可见 [这里](https://github.com/functoreality/rime-flypy-zrmfast/issues/26)
+	* 部分发行版提供的 `fcitx5-rime` 需在插件设置里开启 Lua 支持
+	* 若反复尝试仍未找到支持 Lua 的 Rime，可考虑使用 [ibus-rime AppImage](https://github.com/hchunhui/build)
+<!--
 * 对于中州韵（Linux），据说 Arch Linux 源提供的 fcitx5-rime 可以在插件设置里开启 Lua 支持。
 	* 其他发行版的用户可以考虑这个 [ibus-rime AppImage](https://github.com/hchunhui/build)。遇到调频失效等问题可以试着删除各 userdb、build、sync 文件夹重新部署/同步。如果这一问题反复出现，或者重启/部署/同步之后经常忘掉之前输入的词，可以尝试在 `flypy_zrmfast.custom.yaml` 里开启“用户词典记录为文本格式”，或者看这个 AppImage 有没有发布新版本。
-	* （更新）已有用户提出 flatpak 版本的 fcitx5-rime 已支持 Lua，具体可见 [这个 issue](https://github.com/functoreality/rime-flypy-zrmfast/issues/26)。
-* iRime（iOS）没用过，谁试了或许可以告诉作者（据说这个软件中启用配置文件夹要花钱，而这对使用本项目的配置是必需的）。
+-->
+* iRime（iOS）作者目前暂时没有使用经历，如果有用户已使用，欢迎通过新建 issue 等方式告诉作者。
+	* 作者目前已知的信息是，这个软件中启用配置文件夹要花钱，而这对使用本项目的配置是必需的。
 
 ## 给进阶用户
 这一 Rime 输入方案的制作主要利用了这些文档，希望对 Rime 进行更深入的个性化配置的用户可以参考：
